@@ -55,12 +55,44 @@
                     <span class="slice"></span>
                 </div>
             </div>
-            <div class="menu-principal__wrapper">
+            <div class="menu-principal__wrapper d-none d-md-flex">
                 <?php
                     wp_nav_menu( array( 'header-menu' => 'header-menu' ) );
                 ?>
             </div>
+            <div class="search-icon">
+                <div class="icone"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 24.01" xml:space="preserve"><path d="m25 22.44-7.86-7.55c1.28-1.57 2.05-3.53 2.05-5.68C19.2 4.13 14.89 0 9.6 0S0 4.13 0 9.21s4.31 9.21 9.6 9.21c2.23 0 4.28-.74 5.91-1.97L23.37 24 25 22.44zM2.3 9.21c0-3.86 3.27-7 7.29-7s7.29 3.14 7.29 7-3.27 7-7.29 7-7.29-3.13-7.29-7z"/></svg></div>
+            </div>
         </div>
     </div>
+
  </header>
+
+ <div class="menu-principal__wrapper d-md-none">
+    <div class="close">
+        <span class="slice"></span>
+    </div>
+    <?php
+        wp_nav_menu( array( 'header-menu' => 'header-menu' ) );
+    ?>
+    <div class="search-icon">
+        <div class="icone"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 24.01" xml:space="preserve"><path d="m25 22.44-7.86-7.55c1.28-1.57 2.05-3.53 2.05-5.68C19.2 4.13 14.89 0 9.6 0S0 4.13 0 9.21s4.31 9.21 9.6 9.21c2.23 0 4.28-.74 5.91-1.97L23.37 24 25 22.44zM2.3 9.21c0-3.86 3.27-7 7.29-7s7.29 3.14 7.29 7-3.27 7-7.29 7-7.29-3.13-7.29-7z" fill="#fff"/></svg></div>
+    </div>
+</div>
  
+<div class="search__wrapper">
+    <div class="container">
+        <div class="close">
+            <span class="slice"></span>
+        </div>
+        <form action="/" method="get">
+            <input type="text" name="s" id="search" placeholder="Digite aqui para pesquisar" value="<?php the_search_query(); ?>" />
+            <button>
+                <span>pressione enter</span>
+                <div class="search-icon">
+                    <div class="icone"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 24.01" xml:space="preserve"><path d="m25 22.44-7.86-7.55c1.28-1.57 2.05-3.53 2.05-5.68C19.2 4.13 14.89 0 9.6 0S0 4.13 0 9.21s4.31 9.21 9.6 9.21c2.23 0 4.28-.74 5.91-1.97L23.37 24 25 22.44zM2.3 9.21c0-3.86 3.27-7 7.29-7s7.29 3.14 7.29 7-3.27 7-7.29 7-7.29-3.13-7.29-7z" fill="#fff"/></svg></div>
+                </div>
+            </button>
+        </form>
+    </div>
+</div>

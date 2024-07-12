@@ -29,49 +29,85 @@
 .slick-next {
     position: absolute;
     display: block;
-    height: 20px;
-    width: 20px;
+    height: 44px;
+    width: 82px;
     line-height: 0px;
     font-size: 0px;
     cursor: pointer;
     background: transparent;
     color: transparent;
-    top: 50%;
-    -webkit-transform: translate(0, -50%);
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
+    bottom: -82px;
     padding: 0;
     border: none;
     outline: none;
     z-index: 1;
+    border: 2px solid @white;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     &.slick-disabled{
         opacity: 0.6;
         cursor: default;
-        svg{
-            fill: @green1;
-        }
     }
     svg{
-        fill: @green1;
+        width: 28px;
+        display: block;
     }
     &:hover{
         svg{
-            fill: @green1;
         }
         &.slick-disabled{
             svg{
-                fill: @green1;
             }
         }
     }
 }
 
 .slick-prev {
-    left: 0;
+    left: 50%;
+    transform: translate(-94px, 0);
 }
 
 .slick-next {
-    right: 0;
+    right: 50%;
+    transform: translate(94px, 0);
+}
+
+
+@media (min-width: 960px) {
+    .slick-prev,
+    .slick-next {
+        height: 48px;
+        width: 92px;
+        bottom: -92px;
+    }
+    
+    .slick-prev {
+        left: 50%;
+        transform: translate(-104px, 0);
+    }
+
+    .slick-next {
+        right: 50%;
+        transform: translate(104px, 0);
+    }
+}
+@media (min-width: 1200px) {
+    .slick-prev,
+    .slick-next {
+        height: 48px;
+        width: 92px;
+        bottom: -92px;
+    }
+}
+@media (min-width: 1600px) {
+    .slick-prev,
+    .slick-next {
+        height: 48px;
+        width: 92px;
+        bottom: -112px;
+    }
 }
 
 /* Dots */
@@ -81,13 +117,12 @@
 }
 
 .slick-dots {
-    position: absolute;
-    bottom: -32px;
     list-style: none;
     display: block;
     text-align: center;
     padding: 0;
     margin: 0;
+    margin-top: 24px;
     width: 100%;
     & when ( @slick-font-family = 'slick' ) {
         /* Icons */

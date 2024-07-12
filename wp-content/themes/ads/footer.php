@@ -1,7 +1,109 @@
-<?php wp_footer(); ?>
 
-</body>
 
+<footer class="footer__ads">
+
+    <div class="container">
+        
+        <div class="newsletter__wrapper">
+            <div class="newsletter-titulo">
+                <div class="icone">
+                    <svg version="1.1"xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 64.02 64" xml:space="preserve"><style>.st0{fill:#19cad8}</style><path class="st0" d="m63.84 25.23.04-.14c.51-2.17-.37-4.37-2.26-5.61l-5.73-3.7V5.59C55.89 2.5 53.39 0 50.3 0H13.73c-3.09 0-5.59 2.5-5.59 5.59v10.2l-5.73 3.68C.95 20.42.09 21.99.05 23.7l-.05.29v14.08c0 .83.69 1.52 1.54 1.52s1.52-.69 1.52-1.52v-9.41l24.18 15.62c2.89 1.85 6.73 1.85 9.59 0l24.16-15.6v29.7c0 1.4-1.26 2.54-2.82 2.54H5.89c-1.56 0-2.82-1.14-2.82-2.54V46.2c0-.83-.69-1.52-1.52-1.52-.84 0-1.55.71-1.55 1.54v12.19C0 61.5 2.64 64 5.87 64h52.26c3.23 0 5.87-2.5 5.87-5.59V25.9c0-.16-.04-.35-.1-.53l-.06-.14zM8.15 28.34l-4.06-2.62c-.63-.41-1.02-1.1-1.02-1.85s.39-1.44 1.02-1.85l4.06-2.62v8.94zm44.7 1.93-.22.2-17.47 11.3c-1.77 1.16-4.47 1.16-6.26 0L11.15 30.31V5.59h.04c0-1.4 1.14-2.54 2.54-2.54H50.3c1.4 0 2.54 1.14 2.54 2.54v24.68zm7.09-4.55h.02l-4.08 2.64v-8.98l4.06 2.64c.63.43 1.02 1.12 1 1.85-.01.73-.37 1.43-1 1.85z"/><path class="st0" d="M42.18 8.13c-.83 0-1.52.69-1.52 1.52v1l-7.07 2.82-.2-.43c-.26-.53-.77-.87-1.36-.87h-5.08c-3.64 0-6.6 2.97-6.6 6.6 0 2.84 1.83 5.36 4.57 6.26l.26.08 1.3 5.2c.12.53.57.95 1.16 1.08.12.02.24.04.37.04.47 0 .87-.18 1.16-.53.28-.37.39-.85.26-1.3h.02l-1.06-4.21h3.64c.57 0 1.1-.33 1.36-.87l.2-.43 7.07 2.82v1c0 .83.69 1.52 1.52 1.52.83 0 1.52-.69 1.52-1.52V9.65c0-.83-.69-1.52-1.52-1.52zM30.5 22.35h-3.56c-1.95 0-3.56-1.61-3.56-3.56s1.61-3.56 3.56-3.56h3.56v7.12zm10.16 1.3-7.11-2.84v-4.04l7.11-2.84v9.72z"/></svg>
+                </div>
+                <p class="paragrafo">Assine nossa newsletter e fique por dentro de todas as novidades</p>
+            </div>
+            <form>
+                <input type="text" placeholder="Seu nome" />
+                <input type="text" placeholder="Seu e-mail" />
+                <button class="btn-enviar"><span>Cadastrar</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 14.73" xml:space="preserve"><path d="M28.71 6.66 22.35.3c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41l4.66 4.66H0v2h25.59l-4.66 4.66c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l6.36-6.36c.4-.4.4-1.03.01-1.42z" fill="#fff"/></svg></button>
+            </form>
+        </div>
+
+        <div class="formulario-footer">
+            <div class="row">
+                <div class="col-12 col-md-5">
+                    <div class="conteudo">
+                        <div class="icone"><svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 77.91 78" xml:space="preserve"><style>.st0{fill:#19cad8}</style><path class="st0" d="M77.91 10.36C77.91 4.64 73.25 0 67.55 0H24.62C18.9 0 14.26 4.67 14.26 10.36v26.85c0 1.12.66 1.77 1.77 1.77 1.12 0 1.77-.66 1.77-1.77V10.36c0-3.75 3.06-6.81 6.81-6.81h42.94c3.75 0 6.81 3.06 6.81 6.81v57.25c0 3.75-3.06 6.81-6.81 6.81H41.79c-1.12 0-1.77.66-1.77 1.77 0 1.12.66 1.77 1.77 1.77h25.76c5.72 0 10.36-4.67 10.36-10.36V10.36z"/><path class="st0" d="M25.42 63.06c-.4-.26-.74-.46-1.06-.66-.37-.23-.74-.46-1.2-.74l-.89-.6.6-.89c1.09-1.63 1.83-3.15 1.83-5.12 0-4.61-3.89-8.36-8.64-8.36s-8.64 3.75-8.64 8.36c0 1.98 1 3.89 1.83 5.12l.69 1-1.09.54C3.29 64.49 0 69.9 0 76.23 0 77.34.66 78 1.77 78H30.4c1.12 0 1.77-.66 1.77-1.77 0-5.15-2.43-9.93-6.7-13.14.01 0-.05-.03-.05-.03zM16 50.23c2.81 0 5.07 2.15 5.07 4.78 0 2.46-2.03 5.1-5.07 5.1-2.81 0-5.07-2.15-5.07-4.78 0-2.46 2.04-5.1 5.07-5.1zm12.22 23.91H3.55l.34-1.35c1.03-3.92 4.06-7.24 7.76-8.47 4.06-1.26 8.36-.66 11.54 1.57 2.58 1.95 4.12 4.21 4.72 6.96l.29 1.32c-.01-.01.02-.03.02-.03zM61.8 14.31H30.31c-1.12 0-1.77.66-1.77 1.77s.66 1.77 1.77 1.77H61.8c1.12 0 1.77-.66 1.77-1.77s-.65-1.77-1.77-1.77zm0 11.45H30.31c-1.12 0-1.77.66-1.77 1.77s.66 1.77 1.77 1.77H61.8c1.12 0 1.77-.66 1.77-1.77s-.65-1.77-1.77-1.77zm0 11.45H36.04c-1.12 0-1.77.66-1.77 1.77s.66 1.77 1.77 1.77H61.8c1.12 0 1.77-.66 1.77-1.77s-.65-1.77-1.77-1.77zm0 11.45H41.76c-1.12 0-1.77.66-1.77 1.77 0 1.12.66 1.77 1.77 1.77H61.8c1.12 0 1.77-.66 1.77-1.77 0-1.11-.65-1.77-1.77-1.77z"/></svg></div>
+                        <p class="titulo">Quer elevar sua marca a um próximo nível?</p>
+                        <p class="paragrafo">Entre em contato conosco para descobrir como nossas soluções podem transformar suas campanhas. Nossa equipe está pronta para oferecer estratégias personalizadas. Preencha o formulário ao lado e entraremos em contato em breve. <b>Estamos ansiosos para elevar sua marca ao próximo nível</b>.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 offset-md-1">
+                    <div class="form-footer">
+                        <div class="wpcf7 js" id="wpcf7-f21-o1" lang="pt-BR" dir="ltr">
+                            <form action="/canal-de-denuncias/#wpcf7-f21-o1" method="post" class="wpcf7-form init" aria-label="Formulários de contato" novalidate="novalidate" data-status="init">
+                                <p>
+                                    <label>Nome completo</label>
+                                    <span class="wpcf7-form-control-wrap" data-name="nome"><input size="40" maxlength="80" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Informe seu nome completo" value="" type="text" name="nome"></span>
+                                </p>
+                                <div class="row">
+                                    <div class="col-6 pe-3">
+                                        <p>
+                                            <label>Telefone</label>
+                                            <span class="wpcf7-form-control-wrap" data-name="telefone"><input size="40" maxlength="80" class="wpcf7-form-control wpcf7-email wpcf7-text wpcf7-validates-as-email" aria-invalid="false" placeholder="Ex: (41) 999969902" value="" type="tel" name="telefone"></span>
+                                        </p>
+                                    </div>
+                                    <div class="col-6 ps-3">
+                                        <p>
+                                            <label>E-mail</label>
+                                            <span class="wpcf7-form-control-wrap" data-name="email"><input size="40" maxlength="80" class="wpcf7-form-control wpcf7-email wpcf7-text wpcf7-validates-as-email" aria-invalid="false" placeholder="Ex: joao@gmail.com" value="" type="email" name="email"></span>
+                                        </p>
+                                    </div>
+                                </div>
+                                <p>
+                                    <label>Empresa</label>
+                                    <span class="wpcf7-form-control-wrap" data-name="email"><input size="40" maxlength="80" class="wpcf7-form-control wpcf7-email wpcf7-text wpcf7-validates-as-email" aria-invalid="false" placeholder="Informe sua empresa" value="" type="email" name="email"></span>
+                                </p>
+                                <p>
+                                    <label>Mensagem</label>
+                                    <span class="wpcf7-form-control-wrap" data-name="mensagem"><textarea cols="40" rows="10" maxlength="400" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Escreva sua mensagem" name="mensagem"></textarea></span> 
+                                </p>
+                                <p class="btn-enviar">
+                                    <button type="submit">
+                                        <span>enviar</span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 14.73" xml:space="preserve"><path d="M28.71 6.66 22.35.3c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41l4.66 4.66H0v2h25.59l-4.66 4.66c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l6.36-6.36c.4-.4.4-1.03.01-1.42z" fill="#fff"/></svg>
+                                    </button>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="bg">
+                        <div class="logo">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 125 38" xml:space="preserve">
+                                <title>Positivo ADS</title>
+                                <path d="M0 .27h7.35c7.62 0 9.26.99 9.26 6.51 0 5.04-1.8 6.14-8.8 6.14H5.98v5.66H0V.27zm18.36 9.18C18.36 2.1 19.73 0 26.92 0s8.53 2.1 8.53 9.45-1.32 9.4-8.53 9.4-8.56-2.1-8.56-9.4zm11.19 0c0-4.93-.13-5.26-2.64-5.26s-2.61.33-2.61 5.26.11 5.22 2.61 5.22 2.64-.32 2.64-5.22zm8.01 4.98s2.32.16 5.12.16c3.34 0 4.25-.24 4.25-1.24 0-.7-.24-1.02-1.37-1.29l-3.77-.94c-3.77-1.05-4.6-2.05-4.6-5.39C37.18 1.81 39.55 0 45.6 0h.05c2.82 0 5.62.3 5.62.3l-.07 4.14s-2.5-.13-4.98-.13c-2.77 0-3.47.19-3.47 1.21 0 .78.38 1.08 1.64 1.35l3.85.86c3.77.94 4.23 2.48 4.23 5.42 0 4.42-2.74 5.71-8.58 5.71-3.04 0-6.35-.3-6.35-.3l.02-4.13zM54.6.27h5.97v18.32H54.6V.27zm13 4.12h-4.92V.27h15.77v4.12h-4.9v14.2H67.6V4.39zM80.54.27h5.97v18.32h-5.97V.27zm20.62 0h6.03l-5.06 18.32H93.6L88.51.27h6.03l3.32 15.08 3.3-15.08zm6.75 9.18c0-7.35 1.37-9.45 8.56-9.45S125 2.1 125 9.45s-1.32 9.4-8.53 9.4-8.56-2.1-8.56-9.4zm11.2 0c0-4.93-.13-5.26-2.64-5.26s-2.61.32-2.61 5.26c0 4.93.11 5.22 2.61 5.22s2.64-.32 2.64-5.22zM7.94 9.21c2.58 0 2.72-.24 2.72-2.43 0-2.56-.14-2.59-2.72-2.59H5.98v4.98c.51.04 1.21.04 1.96.04z" fill="#fff"></path><path class="logo-positivo" d="m.04 37.26 1.9-8.02c.15-.64.39-1.1.72-1.38.33-.27.81-.41 1.43-.41h1.18c.63 0 1.11.14 1.44.41.33.27.57.74.72 1.38l1.9 8.02c.11.44-.03.66-.42.66H8.4c-.2 0-.34-.04-.43-.13-.09-.09-.15-.24-.2-.45l-.49-2.18c-.04-.18-.15-.27-.32-.27H2.39c-.17 0-.28.08-.32.25l-.49 2.19c-.05.22-.11.37-.2.45-.08.09-.23.13-.43.13H.46c-.39.01-.53-.22-.42-.65zm6.57-3.78c.21 0 .29-.1.23-.29l-.74-3.3c-.09-.42-.21-.7-.36-.84s-.41-.21-.77-.21h-.58c-.35 0-.6.07-.75.21-.15.14-.28.41-.38.83l-.74 3.27c-.06.21.02.32.23.32h3.86v.01zM10.61 37.44v-9.42c0-.14.05-.26.14-.35.09-.09.2-.14.35-.14h4.05c1 0 1.78.13 2.33.38s.97.71 1.24 1.38c.27.67.41 1.62.41 2.86v1.08c0 1.27-.14 2.24-.41 2.92-.28.68-.69 1.15-1.24 1.4s-1.33.38-2.33.38H11.1c-.14 0-.26-.05-.35-.14-.09-.1-.14-.21-.14-.35zm1.84-8.52c-.11 0-.19.02-.23.06-.04.04-.06.11-.06.23v7.04c0 .11.02.19.06.23.04.04.11.06.23.06h2.65c1.01 0 1.68-.21 1.99-.64.31-.43.47-1.33.47-2.72v-.98c0-1.36-.16-2.24-.47-2.65-.31-.41-.97-.62-1.99-.62l-2.65-.01zM21.14 37.7c-.19-.06-.33-.14-.41-.24-.09-.1-.13-.25-.13-.44v-.39c0-.14.04-.25.12-.34.08-.09.19-.13.33-.13.07 0 .39.08.95.23.56.15 1.16.23 1.81.23h.35c.92 0 1.56-.14 1.92-.41.36-.27.53-.68.53-1.21v-.06c0-.33-.06-.58-.18-.76-.12-.18-.37-.34-.75-.49-.38-.15-.98-.32-1.82-.51-1.34-.31-2.24-.65-2.69-1-.45-.36-.67-.94-.67-1.76v-.05c0-1.03.27-1.77.81-2.22.54-.46 1.51-.68 2.91-.68h.5c1.02 0 1.91.1 2.65.32.35.1.53.31.53.63v.44c0 .14-.04.25-.12.34-.08.09-.19.13-.33.13-.07 0-.38-.08-.93-.23-.55-.15-1.16-.23-1.82-.23h-.36c-.86 0-1.45.11-1.77.33-.32.22-.48.58-.48 1.08v.09c0 .39.16.68.48.87.32.19 1.01.39 2.07.61 1.42.32 2.37.68 2.84 1.07.47.39.7 1.03.7 1.92v.06c0 1.06-.28 1.85-.85 2.36-.57.51-1.57.76-3 .76h-.6c-1.09-.02-1.95-.12-2.59-.32z" fill="#a77bca"></path>
+                            </svg>
+                        </div>
+                        <p class="copy">
+                            © <?php echo date('Y'); ?> Positivo Tecnologia
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-8">
+                    <div class="bg">
+                        <div class="menu-footer__wrapper">
+                            <?php
+                                wp_nav_menu( array( 'header-menu' => 'header-menu' ) );
+                            ?>
+                        </div>
+                        <a href="#" title="Política de Privacidade">política de privacidade</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+<!-- 
 <footer class="footer__alfama">
     <div class="container">
         <div class="footer__wrapper">
@@ -40,4 +142,7 @@
             </div>
         </div>
     </div>
-</footer>
+</footer> -->
+
+</body>
+<?php wp_footer(); ?>

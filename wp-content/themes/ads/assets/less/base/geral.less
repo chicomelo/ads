@@ -10,15 +10,181 @@ html{
 a{
     text-decoration: none;
 }
+
+.purple{
+    color: #8F67FF;
+}
+.green{
+    color: @green1;
+}
+
 .img-fluid {
     max-width: 100%;
     height: auto;
 }
 
-.purple{
-    color: @purple1;
+.titulo{
+    color: @white;
+    font-weight: 500;
+    font-size: 2.8rem;
+    span{
+        font-weight: 500;
+    }
 }
 
-.green{
-    color: @green1;
+.paragrafo{
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: @white;
+    margin-top: 24px;
+}
+
+.btn{
+    background-color: @purple1;
+    font-size: 1.6rem;
+    color: @white;
+    padding: 16px 32px;
+    border-radius: 40px;
+    transition: all 0.2s;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-top: 42px;
+    svg{
+        display: inline-block;
+        width: 28px;
+        fill: @white;
+        transition: all 0.2s;
+    }
+    &:hover{
+        background-color: @purple2;
+    }
+}
+
+
+.slick-dots{
+    li {
+        width: 12px;
+        height: 6px;
+        margin: 0 4px;
+        transition: 0.3s all;
+        button{
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #59595A;
+            border-radius: 5px;
+            &::before{
+                display: none;
+            }
+        }
+        &.slick-active{
+            width: 20px;
+            button{
+                background-color: @purple1;
+            }
+        }
+    }
+}
+
+.banner-interna{
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -64px;
+    position: relative;
+    h2{
+        font-size: 2.8rem;
+        line-height: 1.3;
+        color: @white;
+        font-weight: 500;
+        text-align: center;
+        padding: 0 42px;
+        br{
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .titulo{
+        font-size: 3.6rem;
+    }
+
+    .paragrafo{
+        font-size: 1.6rem;
+        margin-top: 24px;
+    }
+
+    .btn{
+        font-size: 1.6rem;
+        padding: 16px 32px;
+        gap: 24px;
+        margin-top: 48px;
+        svg{
+            width: 28px;
+        }
+    }
+
+    .banner-interna{
+        background-size: cover;
+        background-position: center;
+        height: 642px;
+        margin-top: -88px;
+        h2{
+            padding: 0;
+            font-size: 4.0rem;
+            br{
+                display: inline;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .titulo{
+        font-size: 4.2rem;
+    }
+
+    .paragrafo{
+        font-size: 1.8rem;
+        margin-top: 32px;
+    }
+
+    .btn{
+        font-size: 1.8rem;
+        gap: 32px;
+        margin-top: 64px;
+        svg{
+            width: 28px;
+        }
+    }
+    .banner-interna{
+        height: 696px;
+        h2{
+            font-size: 4.8rem;
+        }
+    }
+}
+
+@media (min-width: 1600px) {
+    .titulo{
+        font-size: 4.8rem;
+    }
+    .paragrafo{
+        font-size: 2.0rem;
+    }
+    .btn{
+        font-size: 2.0rem;
+    }
+    .banner-interna{
+        height: 696px;
+        h2{
+            font-size: 5.4rem;
+        }
+    }
 }
