@@ -32,6 +32,11 @@
 .apresentacao{
     background-color: @black;
     padding: 0 0 64px 0;
+
+    .btn{
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .bg-solucoes-tecnologia{
@@ -66,7 +71,6 @@
                 padding: 28px;
                 border-radius: 24px;
                 margin: 0 12px;
-
                 .tag{
                     position: absolute;
                     top: 28px;
@@ -90,6 +94,7 @@
                 .paragrafo{
                     margin-top: 0;
                     font-size: 1.6rem;
+                    height: 128px;
                 }
                 .btn-saiba-mais{
                     margin: 0;
@@ -285,25 +290,35 @@
 }
 
 .data-driven{
-    padding: 42px 0 78px 0;
+    padding: 42px 0 164px 0;
     background-color: @black;
     text-align: left;
+    
     .slider-driven-mobile{
         margin-top: 48px;
         height: 260px;
         .slider{
             .item{
                 border-radius: 24px;
-                height: 72px;
-                width: 136px;
+                
                 display: flex;
-                align-content: center;
+                align-items: center;
                 justify-content: center;
-                margin: 0 auto;
+                flex-direction: column;
+                margin: 0 10px;
                 margin-bottom: 16px;
-                svg{
-                    width: 24px;
+                padding: 20px;
+                .icone{
+                    svg{
+                        fill: @white;
+                        width: 48px;
+                    }
                 }
+                .paragrafo{
+                    font-weight: 500;
+                    margin-top: 12px;
+                }
+                
             }
             .slick-slide{
                 &:nth-child(even){
@@ -502,6 +517,10 @@
         padding: 92px 0 64px 0;
         background-size: 580px;
         background-position: -10vw center;
+
+        .btn{
+            margin-left: 0;
+        }
     }
 
     .bg-solucoes-tecnologia{
@@ -717,7 +736,7 @@
     }
 
     .data-driven{
-        padding: 42px 0 78px 0;
+        padding: 42px 0 124px 0;
         text-align: center;
         .slider-driven{
             margin-top: 48px;
@@ -727,17 +746,25 @@
                 .item{
                     border-radius: 24px;
                     background-color: @purple1;
-                    height: 110px;
                     display: flex;
                     align-content: center;
                     justify-content: center;
+                    flex-direction: column;
                     float: left;
                     margin: 0 12px;
+                    padding: 24px 16px;
+                    .icone{
+                        svg{
+                            fill: @white;
+                            width: 48px;
+                        }
+                    }
+                    .paragrafo{
+                        font-weight: 500;
+                        margin-top: 16px;
+                    }
                     &:nth-child(even){
                         background-color: @purple2;
-                    }
-                    svg{
-                        width: 42px;
                     }
                 }
                 &::after{
@@ -1034,15 +1061,18 @@
         }
     }
     .data-driven{
-        padding: 42px 0 78px 0;
+        padding: 42px 0 124px 0;
         .slider-driven{
             margin-top: 64px;
             height: 222px;
             .slider{
                 .item{
-                    height: 130px;
-                    svg{
-                        width: 42px;
+                    padding: 32px 16px;
+                    border-radius: 36px;
+                    .icone{
+                        svg{
+                            width: 56px;
+                        }
                     }
                 }
             }
@@ -1180,16 +1210,19 @@
         }
     }
     .data-driven{
-        padding: 42px 0 78px 0;
+        padding: 42px 0 164px 0;
         .slider-driven{
             margin-top: 64px;
             height: 252px;
             .slider{
                 .item{
-                    height: 140px;
-                    svg{
-                        width: 42px;
+                    border-radius: 42px;
+                    .icone{
+                        svg{
+                            width: 64px;
+                        }
                     }
+                    
                 }
             }
     

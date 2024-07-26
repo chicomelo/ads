@@ -11,72 +11,315 @@ the_content();
                 <div class="col-12 col-md-8 offset-md-2"><h2>Descoberta e inovação são os pilares de nossa trajetória. </h2></div>
             </div>
         </div>
-        
     </div>
 
-    <div class="sobre-nos__wrapper">
+    <div class="nossas-solucoes__wrapper">
 
-        <section class="quem-somos">
+        <section class="conectamos-marcas">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 col-lg-5">
-                        <p class="frase">Nascemos de uma empresa brasileira com mais de <b>30 anos</b> de experiência e presença global.</p>
-                        <div class="powerby">
-                            <p>Powered by</p>
-                            <img src="<?php echo do_shortcode("[img-url]"); ?>logo-positivo-tecnologia.png" alt="Positivo Tecnologia" width="300" />
-                        </div>
-                    </div>
-
-                    <div class="col-12 offset-lg-1 col-lg-6">
-                        <h3>Com DNA tecnológico,<br /> e suportados por uma <br />Big tech brasileira.</h3>
-                        <p class="paragrafo">
-                            Tudo começou ao desvendarmos o potencial latente nos dados gerados pelos nossos dispositivos, o que nos abriu portas para a monetização inteligente dessas informações, já que fabricamos mais de 60 milhões de dispositivos. Esse passo não só ampliou nossos horizontes, mas também nos posicionou com uma AdTech inovadora, ultrapassando as barreiras da mídia em dispositivos próprios e ampliando nosso alcance.
-                        </p>
-                        <p class="paragrafo">
-                            Hoje, a Positivo ADS vai além de alcançar — nós conectamos pessoas em todos os cantos da internet. Transformamos nossa plataforma em um vetor de publicidade que não só atinge, mas também engaja e cria conexões significativas, independentemente de onde estejam.
-                        </p>
-                        <p class="paragrafo">
-                            Somos uma ADTECH impulsionada pelo desafio de transformar dados em conexões significativas. Combinamos soluções de mídia inovadoras, enriquecidas por dados e com inteligência geoespacial para análise do mundo físico e impacto no mundo digital, e compromisso com privacidade e segurança. Com legitimidade no ecossistema tecnológico, conectamos marcas e consumidores através de uma sinergia única entre dados, dispositivos e inteligência artificial.
-                        </p>
-                        
+                    <div class="col-12 col-md-8 offset-md-2">
+                        <h2 class="titulo">
+                            Conectamos <span class="purple">marcas</span> e <span class="green">pessoas</span> com inteligência e exclusividade digital.
+                        </h2>
+                        <p class="paragrafo">São mais de 10 data sources que sustentam a segmentação do público alvo para personalização de anúncios.</p>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section class="conectamos__wrapper">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-md-10 offset-md-1">
-                        <h2 class="titulo d-md-none">Conectamos sua marca<br /> às pessoas ideais.</h2>
-                        <div class="video__wrapper">
-                            <img class="img-fluid" src="<?php echo do_shortcode("[img-url]"); ?>conectamos-thumb-video.jpg" alt="">
-                            <div class="conteudo">
-                                <h2 class="titulo d-none d-md-block">Conectamos sua marca<br /> às pessoas ideais.</h2>
-                                <a href="https://www.youtube.com/watch?v=QLQ3sLSrfwI" data-fancybox data-width="960" data-height="540" class="btn" title="Assistir">
-                                    Assistir
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33 33" xml:space="preserve"><path d="M16.5 0C7.39 0 0 7.39 0 16.5S7.39 33 16.5 33 33 25.6 33 16.5 25.6 0 16.5 0zm0 1.5c8.29 0 15 6.71 15 15s-6.71 15-15 15-15-6.71-15-15 6.71-15 15-15zm-5.61 7.11c-.41-.01-.75.32-.76.74v14.27c0 .41.33.75.74.76.13 0 .27-.03.38-.1L24 17.16c.27-.15.42-.45.38-.76-.03-.23-.17-.44-.38-.55L11.25 8.72c-.11-.07-.24-.1-.36-.11zm.73 2.04 10.47 5.85-10.47 5.85v-11.7z" /></svg>
-                                </a>
+                <div class="servicos">
+                    <div class="servico servico-1">
+                        <a href="#people-based-ads" title="People Based ADS">
+                            <h3 class="sub-titulo">People <br />Based ADS</h3>
+                            <div class="lista">
+                                <div class="item">LOCATION-BASED TARGETING</div>
+                                <div class="item">PROXIMITY TARGET</div>
+                                <div class="item">AI PLANNING</div>
                             </div>
-                            
+                        </a>
+                    </div>
+                    <div class="servico servico-2">
+                        <a href="#positivo-ads-platform" title="Positivo ADS Platform">
+                            <h3 class="sub-titulo">Positivo <br />ADS Platform</h3>
+                            <div class="lista">
+                                <div class="item">VÍDEO</div>
+                                <div class="item">DOOH</div>
+                                <div class="item">DISPLAY</div>
+                                <div class="item">ÁUDIO</div>
+                                <div class="item">NATIVE</div>
+                                <div class="item">CONNECTV/IOT</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="servico servico-3">
+                        <a href="#positivo-oem-ads" title="Positivo OEM ADS">
+                            <h3 class="sub-titulo">Positivo <br />OEM ADS</h3>
+                            <div class="lista">
+                                <div class="item">APP INSTALL</div>
+                                <div class="item">DESKMEDIA</div>
+                                <div class="item">PUSH NOTIFICATION</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="people-based-ads" id="people-based-ads">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="icone-titulo">
+                            <div class="icone"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 31.33 35" xml:space="preserve"><path d="M14.33 32.2H2.79c-.39 0-.76-.13-.98-.36-.23-.23-.36-.55-.36-.9v-1.65c0-3.2 1.27-6.24 3.58-8.54 2.31-2.31 5.35-3.58 8.58-3.58 1.03 0 2.04.12 3.01.37 1 .24 1.93.6 2.85 1.1.38.21.85.07 1.06-.31.21-.38.07-.85-.31-1.05-1.03-.56-2.06-.97-3.06-1.23l-.37-.1.35-.16c.9-.43 1.7-.99 2.37-1.66 1.56-1.56 2.41-3.63 2.41-5.85s-.86-4.29-2.41-5.85C17.9.86 15.82 0 13.64 0c-2.17 0-4.28.88-5.81 2.41-1.55 1.56-2.41 3.64-2.41 5.86s.86 4.3 2.41 5.85c.73.73 1.52 1.29 2.33 1.66l.35.16-.38.1c-2.32.63-4.44 1.85-6.13 3.54-2.54 2.55-4 6.08-4 9.67v1.65c0 .8.3 1.52.84 2.03.51.55 1.23.85 2.03.85h11.46c.45 0 .78-.34.78-.78.01-.46-.33-.8-.78-.8zM8.92 12.99c-1.27-1.23-1.97-2.91-1.97-4.72 0-1.82.72-3.47 1.97-4.72 1.23-1.27 2.91-1.97 4.72-1.97 1.82 0 3.47.72 4.72 1.97 1.27 1.23 1.97 2.91 1.97 4.72 0 1.82-.72 3.47-1.97 4.72-1.23 1.27-2.91 1.97-4.72 1.97-1.74 0-3.46-.72-4.72-1.97z"/><path class="st0" d="M31.31 25.36c.06-.4-.24-.81-.65-.88l.01.01-4.82-.74-.02-.05-2.18-4.32c-.1-.17-.2-.27-.34-.34-.12-.06-.24-.08-.36-.08-.29 0-.55.16-.7.43l-2.2 4.36-.05.01-4.76.73c-.2.04-.36.12-.49.24-.15.15-.23.34-.23.54s.08.39.23.54l3.47 3.47-.01.05-.81 4.77c-.04.17 0 .3.07.49.1.18.28.32.49.39.19.06.39.04.56-.06l4.37-2.25.04.02 4.28 2.18c.18.11.35.14.51.11.42-.07.72-.48.65-.88l-.78-4.82 3.47-3.47c.14-.14.21-.27.25-.45zm-5.02 3.1c-.22.19-.27.48-.24.69l.61 3.69-3.34-1.74c-.24-.1-.51-.1-.72 0l-3.34 1.74.61-3.73c.03-.25-.06-.49-.24-.68l-2.69-2.65 3.73-.56c.25-.03.47-.18.58-.41l1.69-3.34 1.69 3.34c.14.25.39.41.66.45l3.65.57-2.65 2.63z"/></svg></div>
+                            <h2 class="titulo">People Based <br />ADS</h2>
+                        </div>
+
+                        <div class="servico d-md-none">
+                            <div class="lista">
+                                <div class="item">LOCATION-BASED TARGETING</div>
+                                <div class="item">PROXIMITY TARGET</div>
+                                <div class="item">AI PLANNING</div>
+                            </div>
+                        </div>
+                        <p class="paragrafo">Tecnologia para segmentar consumidores com 1st party data, criando audiências personalizadas. Analisamos padrões de comportamento no mundo físico, coletando dados de localização e segmentando audiências para anúncios relevantes e direcionados. Isso otimiza a eficácia das campanhas, aumentando engajamento e conversões.</p>
+                        <p class="sub-titulo">Tipos de dados:</p>
+                        <ul class="lista">
+                            <li>Informações Sócios Econômicas</li>
+                            <li>Locais Visitados</li>
+                            <li>Comportamento e tendências</li>
+                            <li>Mobilidade dos usuário</li>
+                        </ul>
+                        <a href="#formulario-footer" class="btn" title="Quero saber mais">
+                            quero saber mais
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 14.73" xml:space="preserve"><path d="M28.71 6.66 22.35.3c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41l4.66 4.66H0v2h25.59l-4.66 4.66c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l6.36-6.36c.4-.4.4-1.03.01-1.42z" fill="#fff"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="como-funciona">
+                    <p class="titulo-2">Como funciona</p>
+
+                    <div class="slider-como-funciona">
+                        <div class="slider">
+                            <div class="item">
+                                <div class="icone">
+                                    <span class="nro">1</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 67" xml:space="preserve"><path d="M47.14 6.23C42.78 4.59 36.72 3.58 30 3.58S17.22 4.6 12.86 6.23C8.95 7.7 6.53 9.57 6.53 11.46c0 1.89 2.42 3.75 6.33 5.23 4.36 1.64 10.41 2.65 17.14 2.65s12.78-1.02 17.14-2.65c3.91-1.47 6.33-3.34 6.33-5.23-.01-1.89-2.43-3.75-6.33-5.23zm9.36 5.23v44.08c0 3.31-3.17 6.16-8.31 8.1C43.5 65.41 37.07 66.5 30 66.5s-13.51-1.09-18.19-2.86c-5.13-1.94-8.31-4.79-8.31-8.1V11.46c0-3.31 3.17-6.17 8.31-8.1C16.49 1.59 22.93.5 30 .5s13.51 1.09 18.19 2.86c5.13 1.94 8.3 4.79 8.31 8.1zM6.54 46.11v9.43c0 1.9 2.42 3.75 6.33 5.23 4.36 1.64 10.41 2.65 17.14 2.65s12.78-1.02 17.14-2.65c3.91-1.47 6.33-3.34 6.33-5.23v-9.43c-1.37 1.08-3.15 2.04-5.27 2.84-4.69 1.77-11.12 2.86-18.19 2.86-7.07 0-13.51-1.09-18.19-2.86-2.12-.8-3.91-1.75-5.27-2.84h-.02zm0-19.96v-9.43c1.37 1.08 3.15 2.04 5.27 2.84 4.69 1.77 11.12 2.86 18.19 2.86 7.07 0 13.51-1.09 18.19-2.86 2.12-.8 3.91-1.75 5.27-2.84v9.43c0 1.9-2.42 3.75-6.33 5.23-4.36 1.64-10.41 2.65-17.14 2.65s-12.78-1.02-17.14-2.65c-3.91-1.47-6.33-3.34-6.33-5.23h.02zm46.92 5.27c-1.37 1.08-3.15 2.04-5.27 2.84-4.69 1.77-11.12 2.86-18.19 2.86-7.07 0-13.51-1.09-18.19-2.86-2.12-.8-3.91-1.75-5.27-2.84v9.43c0 1.9 2.42 3.75 6.33 5.23 4.36 1.64 10.41 2.65 17.14 2.65s12.78-1.02 17.14-2.65c3.91-1.47 6.33-3.34 6.33-5.23v-9.43h-.02zm-42.55-5.03.91.4c.77.33 1.66-.03 1.99-.81.33-.78-.03-1.68-.8-2.01l-.91-.4c-.77-.33-1.66.03-1.99.81-.33.77.02 1.68.8 2.01zm0 14.81.91.4c.77.33 1.66-.03 1.99-.81.33-.78-.03-1.68-.8-2.01l-.91-.4c-.77-.33-1.66.03-1.99.81-.33.78.02 1.68.8 2.01zm0 14.81.91.4c.77.33 1.66-.03 1.99-.81.33-.78-.03-1.68-.8-2.01l-.91-.4c-.77-.33-1.66.03-1.99.81-.33.78.02 1.68.8 2.01z" fill-rule="evenodd" clip-rule="evenodd"/></svg>
+                                </div>
+                                <p class="sub-titulo">Coleta de Dados</p>
+                                <p class="paragrafo">Consentimento e anonimização garantindo a privacidade e segurança dos consumidores das nossas fontes de dados.</p>
+                            </div>
+                            <div class="item">
+                                <div class="icone">
+                                    <span class="nro">2</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 67" xml:space="preserve"><path d="M22.14 9.29c-.75 0-1.56.48-1.56 1.55s.81 1.55 1.56 1.55c.76 0 1.56-.48 1.56-1.55.01-1.07-.8-1.55-1.56-1.55zM29.63 12.39h9.35c.86 0 1.56-.69 1.56-1.55 0-.86-.7-1.54-1.56-1.54h-9.35c-.86 0-1.56.69-1.56 1.54-.01.85.69 1.55 1.56 1.55z"/><path d="M51.69 61.33c.12-.1.3-.08.41.02l5.23 5.19.02.02c.61.59 1.59.58 2.19-.02.6-.6.61-1.57.02-2.17l-5.25-5.21c-.11-.11-.12-.29-.02-.41 2.39-3.03 3.45-6.8 3-10.62-.45-3.82-2.37-7.24-5.4-9.64-.07-.06-.12-.15-.12-.24V3.41c0-.9-.37-1.77-1-2.41-.64-.64-1.52-1-2.43-1H13.57c-.91 0-1.79.36-2.43 1L1 11.06c-.64.63-1 1.51-1 2.41v45.67c0 .9.37 1.77 1 2.41.64.65 1.51 1 2.43 1h32.05c.05 0 .11.02.15.04 2.51 1.38 5.35 2 8.22 1.77 2.86-.22 5.57-1.27 7.84-3.03zM5.86 10.62l4.84-4.81c.09-.09.22-.11.34-.07.12.05.19.16.19.29v4.81c0 .17-.14.31-.31.31H6.07c-.12 0-.24-.07-.29-.19-.04-.11-.02-.24.08-.34zm25.47 48.65c-.05.11-.16.17-.28.17H3.43c-.17 0-.31-.14-.31-.31V14.56c0-.17.14-.31.31-.31h7.48c.9 0 1.79-.37 2.43-1 .65-.65 1-1.5 1-2.41V3.41c0-.17.14-.31.31-.31h33.68c.17 0 .31.14.31.31v32.67c0 .1-.05.2-.14.25-.09.06-.2.07-.29.03-1.75-.71-3.61-1.07-5.49-1.07-.59 0-1.21.05-1.84.12-.09.01-.17-.02-.24-.07-.07-.06-.11-.14-.11-.23V21.98c0-.42-.16-.8-.46-1.1-.3-.29-.69-.46-1.1-.46h-9.35c-.86 0-1.56.69-1.56 1.55v24.15c0 .17-.14.31-.31.31h-3.74c-.17 0-.31-.14-.31-.31v-16.7c0-.42-.16-.8-.46-1.1-.3-.29-.69-.45-1.1-.45h-9.35c-.86 0-1.56.69-1.56 1.55v16.71c0 .17-.14.31-.31.31-.86 0-1.56.69-1.56 1.55s.7 1.55 1.56 1.55h16.83c.17 0 .31.14.31.31 0 3.3 1.15 6.53 3.23 9.1.07.09.09.22.04.33v-.01zm6.08-35.43v12.24c0 .12-.07.24-.19.29-2.1.85-4 2.19-5.5 3.89-.06.07-.15.11-.23.11-.03 0-.07 0-.11-.02-.12-.05-.2-.16-.2-.29v-16.2c0-.17.14-.31.31-.31h5.61c.17 0 .31.14.31.31v-.02zm-16.83 7.43v14.86c0 .17-.14.31-.31.31h-5.61c-.17 0-.31-.14-.31-.31V31.27c0-.17.14-.31.31-.31h5.61c.17 0 .31.14.31.31zM42.72 61.3c-6.35 0-11.52-5.12-11.53-11.43v-.06c.02-4.63 2.81-8.77 7.12-10.55 4.32-1.78 9.26-.8 12.57 2.48 3.31 3.29 4.29 8.18 2.5 12.48-1.78 4.3-5.97 7.08-10.66 7.08z"/><path d="m36 50.92 3.74 3.71c.61.6 1.6.6 2.21 0l7.48-7.43c.58-.6.58-1.58-.02-2.17-.6-.6-1.58-.6-2.19-.02l-6.16 6.11c-.12.12-.31.12-.44 0l-2.42-2.4c-.3-.29-.69-.42-1.08-.42-.39 0-.81.15-1.1.45-.6.6-.61 1.57-.02 2.17z"/></svg>
+                                </div>
+                                <p class="sub-titulo">Análise e Personalização</p>
+                                <p class="paragrafo">Identificação de padrões e preferências dos consumidores, permitindo a personalização das campanhas publicitárias.</p>
+                            </div>
+                            <div class="item">
+                                <div class="icone">
+                                    <span class="nro">3</span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 67" xml:space="preserve"><path d="M48.75 16.47V5.37c0-.54-.28-1.04-.74-1.33-.46-.29-1.04-.31-1.52-.07L21.82 16.31H9.69C7.1 16.31 5 18.41 5 21v21.88c0 2.59 2.1 4.69 4.69 4.69v14.06c0 .86.7 1.56 1.56 1.56h9.38c.86 0 1.56-.7 1.56-1.56 0-4.34 1.61-8.43 4.51-11.62l19.79 9.89c.22.11.46.16.7.16.29 0 .57-.08.82-.23.46-.29.74-.79.74-1.33V47.41c3.56-.73 6.25-3.88 6.25-7.66V24.13c0-3.77-2.69-6.93-6.25-7.66zm-25 28.56v-26.2l14.06-7.03v40.26l-14.06-7.03zM8.13 42.87V20.99c0-.86.7-1.56 1.56-1.56h10.94v25H9.69c-.86 0-1.56-.7-1.56-1.56zm11 17.19h-6.31v-12.5h9.01l1.98.99c-2.73 3.27-4.35 7.26-4.68 11.51zm26.5-4.09-4.69-2.34V10.24l4.69-2.34v48.07zm6.25-16.23c0 2.04-1.31 3.75-3.12 4.4V19.72c1.81.65 3.12 2.37 3.12 4.4v15.63-.01z"/></svg>
+                                </div>
+                                <p class="sub-titulo">Entrega de Anúncios</p>
+                                <p class="paragrafo">Múltiplos canais, garantindo que os consumidores vejam os anúncios em momentos e contextos relevantes para eles.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="beneficios-people-based-ads">
+
+                <div class="conteudo__wrapper">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-5">
+                                <div class="conteudo">
+                                    <h2 class="titulo-2">Conheça os principais benefícios do People-Based ADS</h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 col-md-8 offset-md-4">
+                                <div class="slider-beneficios">
+                                    <div class="slider">
+                                        <div class="item">
+                                            <div class="icone"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 86 96" xml:space="preserve"><path d="M21.53 39.46c0-5.02 4.07-9.1 9.09-9.1 2.03 0 4 .68 5.6 1.92-.3 1.04-.46 2.13-.46 3.22 0 .37.02.75.05 1.12.05.51.4.95.9 1.11.94.3 1.94.56 2.96.78.04.32.05.64.05.95v.03c-2.96.8-6.03 1.21-9.1 1.19-3.07.02-6.13-.38-9.1-1.19v-.03zm4.97-15.8c0-2.28 1.85-4.12 4.12-4.12 2.28 0 4.12 1.85 4.12 4.12 0 2.28-1.85 4.12-4.12 4.12-2.28.01-4.12-1.84-4.12-4.12zm20.93 2.75c-5.02 0-9.08 4.08-9.09 9.1v.03c2.96.8 6.03 1.21 9.1 1.19 3.07.02 6.13-.38 9.1-1.19v-.03c-.01-5.02-4.08-9.09-9.11-9.1zm-4.13-6.7c0-2.28 1.85-4.12 4.12-4.12s4.12 1.85 4.12 4.12-1.85 4.12-4.12 4.12-4.12-1.85-4.12-4.12zm20.93 10.66c5.02 0 9.09 4.08 9.1 9.1v.03c-5.96 1.58-12.22 1.58-18.19 0v-.03c0-.32.02-.64.05-.96 1.02-.22 2.01-.48 2.96-.78.49-.16.84-.59.9-1.11.04-.37.05-.75.05-1.12 0-1.09-.16-2.17-.46-3.22 1.61-1.25 3.57-1.93 5.59-1.91zm-4.12-6.71c0-2.28 1.85-4.12 4.12-4.12 2.28 0 4.12 1.85 4.12 4.12 0 2.28-1.85 4.12-4.12 4.12-2.28.01-4.12-1.84-4.12-4.12zm-40.2 18.02c3.47 1.06 7.09 1.58 10.72 1.56 3.63.02 7.24-.5 10.72-1.56.49-.16.84-.59.9-1.11.04-.37.05-.75.05-1.12 0-.17 0-.34-.01-.51 1.71.23 3.43.34 5.15.34 1.72 0 3.45-.11 5.15-.34 0 .17-.01.34-.01.51 0 .37.02.75.05 1.12.05.51.4.95.9 1.11 6.99 2.08 14.45 2.08 21.44 0 .49-.16.84-.59.9-1.11.04-.37.05-.75.05-1.12 0-4.73-2.85-8.99-7.22-10.79 2.77-2.45 3.03-6.68.57-9.45-2.45-2.77-6.68-3.03-9.45-.57-2.77 2.45-3.03 6.68-.57 9.45.17.2.37.39.57.57-.76.31-1.49.7-2.17 1.17-1.29-2.3-3.32-4.11-5.76-5.13 2.77-2.45 3.03-6.68.57-9.45-2.46-2.77-6.68-3.03-9.45-.57-2.77 2.46-3.03 6.68-.57 9.45.18.2.37.39.57.57-2.44 1.01-4.47 2.82-5.75 5.13-.68-.47-1.41-.86-2.17-1.17 2.77-2.45 3.02-6.68.57-9.45-2.45-2.77-6.68-3.02-9.45-.57-2.77 2.45-3.02 6.68-.57 9.45.17.2.37.39.57.57-4.37 1.8-7.22 6.06-7.22 10.79 0 .37.02.75.05 1.12.02.51.38.95.87 1.11zM5.35 59.45l5.71-3.84c.9-.59 2.09-.36 2.7.53l11.7 17.42c.59.9.36 2.1-.53 2.7l-5.71 3.84c-.9.59-2.1.36-2.7-.53L4.82 62.16c-.6-.9-.36-2.11.53-2.71zm12.57-1.79-.03.02 8.65 12.88.17-.15c.23-.18.52-.29.81-.29h28.75c1.23.03 2.41-.41 3.33-1.22l20.13-16.92c1.26-1.06 2.39-2.92 1.39-4.64-.94-1.56-2.96-2.09-4.54-1.19l-18.02 9.64c-.4 2.58-2.62 4.48-5.23 4.48h-12c-.71 0-1.29-.58-1.29-1.29 0-.71.58-1.29 1.29-1.29h12c1.5 0 2.72-1.22 2.72-2.72s-1.22-2.72-2.72-2.72h-12c-.28 0-.56-.09-.79-.27-5.45-4.19-13.22-3.37-17.68 1.85-.05.06-.11.12-.16.16-1.07.88-2.96 2.3-4.78 3.67zm-3.54 23.35L2.69 63.58c-1.39-2.08-.84-4.87 1.23-6.26l5.71-3.84c2.08-1.39 4.87-.84 6.26 1.23l.55.82c1.74-1.29 3.51-2.62 4.54-3.45 5.26-6.05 14.27-7.09 20.77-2.39h11.58c2.17 0 4.11 1.33 4.91 3.34l17.12-9.15c2.81-1.56 6.35-.6 7.99 2.17 1.45 2.51.66 5.69-1.97 7.89L61.26 70.88c-1.39 1.19-3.15 1.84-4.98 1.82H27.99l-.05.04c.94 2.02.27 4.43-1.57 5.67l-5.71 3.84c-2.08 1.38-4.89.84-6.28-1.24z" fill-rule="evenodd" clip-rule="evenodd"/></svg></div>
+                                            <h3 class="sub-titulo">Segmentação <br />precisa</h3>
+                                            <div class="paragrafo">Utilizando dados como históricos de navegação, compras e interações com o site, a Positivo Ads pode direcionar anúncios especificamente para consumidores interessados.</div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="icone"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 86 96" xml:space="preserve"><path d="m69.99 49.36-.02 15.58c0 6.05-2.19 11.9-6.18 16.45-2.41 2.67-3.71 6.16-3.63 9.75l.03 3.36c0 .83-.66 1.51-1.49 1.51h-.01c-.82 0-1.49-.66-1.5-1.49l-.03-3.36c-.1-4.33 1.47-8.54 4.37-11.75 3.51-4 5.44-9.15 5.43-14.47l.02-15.58c.1-1.39-.57-2.73-1.75-3.48-1.07-.61-2.38-.62-3.45-.02-1.17.76-1.83 2.11-1.72 3.5 0 .83-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5v-5.4c.06-1.03-.35-2.03-1.11-2.72-.72-.6-1.63-.92-2.56-.91-1.91-.12-3.55 1.33-3.67 3.24v5.78c0 .83-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5v-5.61c.09-1.27-.55-2.47-1.65-3.11-1.26-.7-2.79-.7-4.05 0-1.06.62-1.7 1.77-1.65 3v5.73c0 .83-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5l.02-32.59c0-2.03-1.64-3.67-3.67-3.68-2.02.02-3.65 1.65-3.67 3.67l-.03 42.02c0 .83-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5V47.99h-.79c-2.02 0-3.66 1.64-3.67 3.67v13.23c0 5.34 1.95 10.5 5.48 14.51 2.89 3.23 4.45 7.42 4.38 11.75l-.03 3.36c0 .82-.68 1.49-1.5 1.49h-.01c-.83 0-1.49-.68-1.49-1.51l.03-3.36c.08-3.6-1.22-7.09-3.64-9.75-4.01-4.56-6.22-10.42-6.23-16.49V51.66c.02-3.68 3-6.65 6.68-6.67h.8l.02-28.26c.02-3.67 2.99-6.65 6.67-6.67h.01c3.68 0 6.67 2.99 6.67 6.68v21.37s.09-.06.14-.09c2.19-1.23 4.86-1.23 7.05 0 .66.38 1.25.88 1.73 1.48 1.31-1.42 3.16-2.22 5.09-2.19 3.5-.12 6.46 2.58 6.65 6.09l.24-.15c2-1.14 4.46-1.14 6.45.02 2.11 1.28 3.36 3.61 3.25 6.08l-.01.01zM21.98 29.05c.83 0 1.5-.67 1.5-1.5 0-.4-.16-.78-.44-1.06-5.38-5.35-5.4-14.05-.05-19.43 5.35-5.38 14.05-5.4 19.43-.05 5.38 5.35 5.4 14.05.05 19.43l-.04.04c-.59.58-.59 1.54 0 2.12.59.58 1.54.59 2.12 0 6.55-6.53 6.57-17.13.05-23.68-6.53-6.55-17.13-6.57-23.68-.05-6.55 6.53-6.57 17.13-.05 23.68l.06.06c.28.28.66.43 1.06.43l-.01.01z"/></svg></div>
+                                            <h3 class="sub-titulo">Maior <br />engajamento</h3>
+                                            <div class="paragrafo">As campanhas personalizadas aumentam significativamente o engajamento, pois os anúncios são relevantes e ressoam com os interesses e comportamentos dos usuários.</div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="icone"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 86 96" xml:space="preserve"><path d="M41.38 73.29c0 .19-.12.37-.29.44-.18.08-.38.03-.52-.1l-2.01-2.01c-.3-.3-.71-.47-1.14-.47-.43 0-.84.17-1.14.47-.3.3-.47.71-.47 1.14s.17.84.47 1.14l5.57 5.57c.08.08.16.15.26.21l.06.03c.08.05.15.09.22.12l.14.04c.08.03.12.04.16.05.04 0 .08 0 .12.01h.36c.06 0 .11 0 .15-.01.03 0 .07-.02.1-.03l.2-.06c.07-.03.13-.06.19-.1l.07-.04c.11-.07.2-.14.28-.22l5.57-5.57c.3-.3.47-.71.47-1.14s-.17-.84-.47-1.14c-.63-.63-1.65-.63-2.28 0l-2.01 2.01c-.14.14-.34.18-.52.1-.18-.07-.29-.25-.29-.44V64.4c0-.89-.72-1.61-1.61-1.61s-1.61.72-1.61 1.61v8.89h-.03zM2.35 51.15c0 3.96 3.23 7.19 7.19 7.19h66.92c3.96 0 7.19-3.23 7.19-7.19V23.27c0-3.96-3.23-7.19-7.19-7.19H9.54c-3.96 0-7.19 3.23-7.19 7.19v27.88zm3.23-27.88c0-2.18 1.78-3.96 3.96-3.96h66.92c2.18 0 3.96 1.78 3.96 3.96v27.88c0 2.19-1.78 3.96-3.96 3.96H9.54c-2.18 0-3.96-1.78-3.96-3.96V23.27z"/><path d="M43 27.05c-5.5 0-9.98 4.48-9.98 9.98s4.48 9.98 9.98 9.98 9.98-4.48 9.98-9.98-4.48-9.98-9.98-9.98zm0 16.73c-3.72 0-6.75-3.03-6.75-6.75s3.03-6.75 6.75-6.75 6.75 3.03 6.75 6.75-3.03 6.75-6.75 6.75zM17.91 27.22c-.89 0-1.61.72-1.61 1.61v16.73c0 .89.72 1.61 1.61 1.61.89 0 1.61-.72 1.61-1.61V28.84c0-.89-.72-1.61-1.61-1.61v-.01zM68.09 27.22c-.89 0-1.61.72-1.61 1.61v16.73c0 .89.72 1.61 1.61 1.61s1.61-.72 1.61-1.61V28.84c0-.89-.72-1.61-1.61-1.61v-.01z"/></svg></div>
+                                            <h3 class="sub-titulo">Otimização <br />de gastos</h3>
+                                            <div class="paragrafo">Focando em prospects de alto valor, a estratégia de People-Based ADS otimiza os investimentos em marketing, garantindo que os recursos sejam aplicados de maneira mais eficiente e eficaz.</div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="icone"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 86 96" xml:space="preserve"><path d="M81.38 19.97c-.24-.58-.81-.96-1.44-.96h-7.96v-7.95c0-.63-.38-1.19-.96-1.44-.58-.24-1.25-.11-1.69.34l-7.32 7.32-.08-.05c-5.96-3.75-12.85-5.72-19.92-5.72-10 0-19.41 3.9-26.51 11C8.41 29.59 4.5 39 4.5 49c0 20.68 16.82 37.5 37.5 37.5S79.5 69.68 79.5 49c0-7.08-1.98-13.97-5.73-19.93l-.05-.08 7.32-7.32c.45-.45.58-1.11.34-1.69v-.01zM76.4 49c0 18.96-15.43 34.39-34.39 34.39S7.61 67.97 7.61 49 23.04 14.61 42 14.61c6.21 0 12.3 1.68 17.61 4.85l.14.08-4.98 4.98c-.29.29-.46.69-.46 1.1v3.84l-.19-.12c-3.67-2.26-7.86-3.46-12.12-3.46-12.75 0-23.13 10.37-23.13 23.12s10.37 23.12 23.12 23.12S65.11 61.75 65.11 49c0-4.26-1.2-8.46-3.46-12.13l-.12-.19h3.84c.42 0 .81-.16 1.1-.46l4.98-4.98.08.14c3.17 5.31 4.85 11.4 4.85 17.61l.02.01zm-35.5 1.1c.29.29.68.46 1.1.46s.81-.16 1.1-.46l3.83-3.83.08.15c.42.81.63 1.67.63 2.58 0 3.11-2.53 5.64-5.63 5.64s-5.64-2.53-5.64-5.64 2.53-5.64 5.64-5.64c.9 0 1.77.21 2.58.63l.15.08-3.83 3.83c-.29.29-.46.68-.46 1.1s.16.81.46 1.1h-.01zm6.08-8.28-.09-.06c-1.45-.98-3.14-1.51-4.9-1.51-4.82 0-8.74 3.92-8.74 8.74s3.92 8.75 8.74 8.75 8.74-3.92 8.74-8.75c0-1.75-.52-3.45-1.5-4.9l-.06-.09 7.34-7.34h1.23l.04.05c2.72 3.5 4.23 7.86 4.23 12.27C62.01 60.02 53.03 69 42 69s-20.02-8.98-20.02-20.02S30.96 28.96 42 28.96c4.41 0 8.76 1.5 12.27 4.22l.05.04v1.31h-.07l-7.26 7.26-.01.03zm17.76-8.25h-7.32v-7.31l5.84-5.84.06-.06 5.55-5.54v5.76c0 .86.7 1.55 1.55 1.55h5.76L64.73 33.58l.01-.01z"/></svg></div>
+                                            <h3 class="sub-titulo">Rapidez na conquista <br />de objetivos de negócio</h3>
+                                            <div class="paragrafo">Essa abordagem eficaz permite às empresas atingirem metas comerciais de forma rápida e eficiente, seja aumentando as vendas de produtos ou ampliando os downloads de aplicativos.</div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="icone"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 86 96" xml:space="preserve"><path d="M42.95 17.07c-15.61 0-28.32 12.7-28.32 28.32 0 4.99 1.32 9.91 3.81 14.2 2.42 4.17 5.89 7.67 10.03 10.14 1.27.76 1.97 1.99 1.97 3.47v6.56c0 2.33 1.56 4.3 3.7 4.91v1.46c0 3.79 3.08 6.87 6.87 6.87h3.87c3.79 0 6.87-3.08 6.87-6.87v-1.46c2.13-.61 3.7-2.58 3.7-4.91V73.2c0-1.48.7-2.71 1.97-3.47 4.14-2.47 7.61-5.97 10.03-10.14 2.5-4.3 3.81-9.21 3.81-14.2 0-15.61-12.7-28.31-28.31-28.31v-.01zm1.93 73.11h-3.87c-2.23 0-4.04-1.81-4.04-4.04v-1.26h11.96v1.26c0 2.23-1.81 4.04-4.04 4.04h-.01zm5.46-8.13H35.56c-1.26 0-2.29-1.03-2.29-2.29v-2.72h19.35v2.72c0 1.26-1.03 2.29-2.29 2.29h.01zm5.64-14.74c-2.13 1.27-3.35 3.42-3.35 5.9v1.01H33.28v-1.01c0-2.48-1.22-4.63-3.35-5.9-7.69-4.58-12.46-12.98-12.46-21.92 0-14.06 11.44-25.49 25.49-25.49s25.49 11.44 25.49 25.49c0 8.94-4.78 17.34-12.46 21.92h-.01zm15.01-38.32c-.39-.67-.16-1.54.52-1.93l6.04-3.49c.68-.39 1.54-.16 1.93.52.39.67.16 1.54-.52 1.93l-6.04 3.49c-.22.13-.46.19-.71.19-.49 0-.96-.25-1.22-.71zM85.23 45.2c0 .78-.63 1.41-1.41 1.41h-6.98c-.78 0-1.41-.63-1.41-1.41 0-.78.63-1.41 1.41-1.41h6.98c.78 0 1.41.63 1.41 1.41zm-5.76 21.06c-.26.45-.74.71-1.22.71-.24 0-.48-.06-.71-.19l-6.04-3.49c-.68-.39-.91-1.25-.52-1.93.39-.67 1.25-.91 1.93-.52l6.04 3.49c.67.39.91 1.25.52 1.93zM41.53 11.39V4.41c0-.78.63-1.41 1.41-1.41s1.41.63 1.41 1.41v6.98c0 .78-.63 1.41-1.41 1.41s-1.41-.63-1.41-1.41zm-20.19-.81c-.39-.68-.16-1.54.52-1.93.67-.39 1.54-.16 1.93.52l3.49 6.04c.39.67.16 1.54-.52 1.93-.22.13-.47.19-.71.19-.49 0-.96-.25-1.22-.71l-3.49-6.04zM6.42 24.09c.39-.67 1.25-.91 1.93-.52l6.04 3.49c.67.39.91 1.25.52 1.93-.26.45-.74.71-1.22.71-.24 0-.48-.06-.7-.19l-6.04-3.49c-.68-.39-.91-1.25-.52-1.93h-.01zm2.74 22.5H2.18c-.78 0-1.41-.63-1.41-1.41s.63-1.41 1.41-1.41h6.98c.78 0 1.41.63 1.41 1.41s-.63 1.41-1.41 1.41zm5.75 14.77c.39.67.16 1.54-.52 1.93l-6.04 3.49c-.22.13-.47.19-.7.19-.49 0-.96-.25-1.22-.71-.39-.68-.16-1.54.52-1.93l6.04-3.49c.68-.39 1.54-.16 1.93.52h-.01zm43.71-46.15 3.49-6.04c.39-.68 1.25-.91 1.93-.52.68.39.91 1.25.52 1.93l-3.49 6.04c-.26.45-.74.71-1.22.71-.24 0-.48-.06-.71-.19-.68-.39-.91-1.25-.52-1.93zM43 27.28c-9.99 0-18.11 8.12-18.11 18.11S33.01 63.5 43 63.5s18.11-8.12 18.11-18.11S52.99 27.28 43 27.28zm-9.29 30.24c2.01-3.19 5.48-5.12 9.28-5.13 3.8 0 7.27 1.94 9.28 5.12-2.58 1.98-5.8 3.15-9.29 3.15s-6.71-1.17-9.29-3.15l.02.01zm4-13.24c0-2.92 2.38-5.29 5.29-5.29s5.29 2.38 5.29 5.29-2.37 5.29-5.29 5.29-5.29-2.38-5.29-5.29zm16.68 11.3c-1.56-2.28-3.74-4.01-6.25-5.02 1.82-1.49 2.98-3.75 2.98-6.28 0-4.48-3.64-8.12-8.12-8.12s-8.12 3.64-8.12 8.12c0 2.53 1.16 4.79 2.98 6.28-2.51 1-4.68 2.73-6.25 5.02-2.42-2.71-3.9-6.28-3.9-10.19 0-8.43 6.86-15.29 15.29-15.29s15.29 6.86 15.29 15.29c0 3.91-1.48 7.48-3.9 10.19z"/></svg></div>
+                                            <h3 class="sub-titulo">Insights profundos <br />sobre o Cliente</h3>
+                                            <div class="paragrafo">A coleta e análise de dados fornecem insights valiosos sobre o comportamento do consumidor, permitindo uma compreensão mais profunda das preferências e necessidades.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="positivo-ads-platform" id="positivo-ads-platform">
+            <div class="bg">
+                <div class="container">
+                    <div class="icone-titulo">
+                        <div class="icone"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26.47 41" xml:space="preserve"><path d="M21.02 0H5.45C2.45 0 0 2.44 0 5.45v30.1c0 3 2.44 5.45 5.45 5.45h15.56c3 0 5.45-2.44 5.45-5.45V5.45c0-3.01-2.44-5.45-5.44-5.45zM1.56 33.74h23.35v1.81c0 2.15-1.74 3.89-3.89 3.89H5.45c-2.15 0-3.89-1.74-3.89-3.89v-1.81zm23.35-1.56H1.56V5.45c0-2.15 1.74-3.89 3.89-3.89h15.56c2.15 0 3.89 1.74 3.89 3.89l.01 26.73z"/><path d="M20.45 21.54H6.02c-1.36 0-2.47 1.11-2.47 2.47v3.71c0 1.36 1.11 2.47 2.47 2.47h14.44c1.36 0 2.47-1.11 2.47-2.47v-3.71c0-1.37-1.11-2.47-2.48-2.47zM5.11 24.01c0-.51.4-.91.91-.91h14.44c.51 0 .91.4.91.91v3.71c0 .51-.4.91-.91.91H6.02c-.51 0-.91-.4-.91-.91v-3.71zM10.65 37.37h5.19c.43 0 .78-.35.78-.78s-.35-.78-.78-.78h-5.19c-.43 0-.78.35-.78.78s.35.78.78.78z"/></svg></div>
+                        <h2 class="titulo">Positivo ADS <br />Platform</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="servico d-md-none">
+                                <div class="lista">
+                                    <div class="item">VÍDEO</div>
+                                    <div class="item">DOOH</div>
+                                    <div class="item">DISPLAY</div>
+                                    <div class="item">ÁUDIO</div>
+                                    <div class="item">NATIVE</div>
+                                    <div class="item">CONNECTV/IOT</div>
+                                </div>
+                            </div>
+                            <p class="paragrafo">Plataforma com robusta conexão com inventários, formatos e canais premium. Estamos preparados para atender à crescente demanda por conteúdo de alta qualidade, garantindo anúncios em contextos notáveis, alinhados com os hábitos modernos de consumo de mídia e personalização das campanhas.</p>
+                            <p class="paragrafo">Com deals qualificados junto aos principais suppliers do mercado e mais de 1.100 publishers parceiros, temos uma cobertura ampla e diversificada, atingindo eficazmente o público-alvo.</p>
+                            <p class="frase">Com deals qualificados junto aos principais suppliers do mercado e mais de <b>1.100 publishers parceiros</b>, a Positivo Ads garante uma cobertura ampla e diversificada, atingindo eficazmente o público-alvo.</p>
+
+                            <a href="#formulario-footer" class="btn" title="Quero saber mais">
+                                quero saber mais
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 14.73" xml:space="preserve"><path d="M28.71 6.66 22.35.3c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41l4.66 4.66H0v2h25.59l-4.66 4.66c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l6.36-6.36c.4-.4.4-1.03.01-1.42z" fill="#fff"/></svg>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="nossos-clientes">
-            <h2 class="titulo">Nossos clientes</h2>
-            <p class="paragrafo">Clientes que já foram impactados com nossas soluções</p>
+        <section class="formatos-disponiveis-ads-platform">
+            <div class="container">
+                <p class="titulo-2">Formatos disponíveis</p>
+                <p class="paragrafo">Confira abaixo as etapas do processo People-Based ADS</p>
 
-            <picture>
-                <source media="(max-width: 799px)" srcset="<?php echo do_shortcode("[img-url]"); ?>nossos-clientes-img-mobile.jpg" />
-                <img class="img-fluid" src="<?php echo do_shortcode("[img-url]"); ?>nossos-clientes-img.jpg" alt="Nossos clientes" />
-            </picture>
-            <a href="#" class="btn" title="Ver nossas soluções">
-                ver nossas soluções
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 14.73" xml:space="preserve"><path d="M28.71 6.66 22.35.3c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41l4.66 4.66H0v2h25.59l-4.66 4.66c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l6.36-6.36c.4-.4.4-1.03.01-1.42z" fill="#fff"/></svg>
-            </a>
+                <div class="slider-formatos-disponiveis">
+                    <div class="slider">
+                        <div class="item">
+                            <div class="icone"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 112.48 189.74" xml:space="preserve"><style>.st11{fill:#848484}</style><path class="st11" d="M90.32 0H22.16C9.94 0 0 9.94 0 22.16v145.42c0 12.22 9.94 22.16 22.16 22.16h68.15c12.23 0 22.16-9.94 22.16-22.16V22.16C112.48 9.94 102.54 0 90.32 0zm18.75 167.58c0 10.34-8.41 18.75-18.75 18.75H22.16c-10.34 0-18.76-8.41-18.76-18.75V22.16c0-10.34 8.42-18.75 18.76-18.75h68.15c10.34 0 18.75 8.41 18.75 18.75v145.42z"/><path d="M87.87 143.24H24.63c-5.48 0-9.95-4.47-9.95-9.95v-16.24c0-5.48 4.47-9.95 9.95-9.95h63.24c5.48 0 9.95 4.47 9.95 9.95v16.24c0 5.49-4.47 9.95-9.95 9.95zm-63.24-31.03c-2.67 0-4.83 2.17-4.83 4.83v16.24c0 2.67 2.17 4.83 4.83 4.83h63.24c2.67 0 4.83-2.17 4.83-4.83v-16.24c0-2.67-2.17-4.83-4.83-4.83H24.63z" fill="#19cad8"/><path class="st11" d="M110.79 154.52H1.71v3.41h109.08v-3.41zM67.61 173.84H44.88c-.95 0-1.71-.76-1.71-1.71s.76-1.71 1.71-1.71h22.73c.95 0 1.71.76 1.71 1.71s-.76 1.71-1.71 1.71z"/></svg></div>
+                            <p class="paragrafo">Display</p>
+                        </div>
+                        <div class="item">
+                            <div class="icone"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 112.48 189.74" xml:space="preserve"><style>.st0{fill:#848484}.st1{fill:#19cad8}</style><path class="st11" d="M90.32 189.74H22.16C9.94 189.74 0 179.81 0 167.58V22.16C0 9.94 9.94 0 22.16 0h68.15c12.23 0 22.16 9.94 22.16 22.16v145.42c.01 12.23-9.93 22.16-22.15 22.16zM22.16 3.41C11.82 3.41 3.4 11.82 3.4 22.16v145.42c0 10.34 8.42 18.75 18.76 18.75h68.15c10.34 0 18.75-8.41 18.75-18.75V22.16c0-10.34-8.41-18.75-18.75-18.75H22.16z"/><path class="st11" d="M110.77 154.52H1.69v3.41h109.08v-3.41zM67.6 173.84H44.87c-.95 0-1.71-.76-1.71-1.71s.76-1.71 1.71-1.71H67.6c.95 0 1.71.76 1.71 1.71-.01.95-.76 1.71-1.71 1.71z"/><path class="st1" d="M87.84 143.24h-63.2c-5.48 0-9.95-4.47-9.95-9.95V24.64c0-5.48 4.47-9.95 9.95-9.95h63.2c5.48 0 9.95 4.47 9.95 9.95v108.65c0 5.48-4.47 9.95-9.95 9.95zM24.64 19.8c-2.67 0-4.83 2.17-4.83 4.83v108.65c0 2.67 2.17 4.83 4.83 4.83h63.2c2.67 0 4.83-2.17 4.83-4.83V24.64c0-2.67-2.17-4.83-4.83-4.83h-63.2z"/><path class="st1" d="M46.25 98.51c-.96 0-1.92-.23-2.8-.69-1.98-1.04-3.21-3.09-3.21-5.32V65.1c0-2.23 1.23-4.28 3.21-5.32s4.36-.91 6.2.37l19.98 13.7c1.64 1.12 2.61 2.98 2.61 4.95 0 1.99-.97 3.84-2.61 4.95l-19.98 13.7c-1.03.7-2.21 1.06-3.4 1.06zm0-34.33c-.18 0-.32.05-.43.11-.18.09-.49.32-.49.8v27.4c0 .47.3.7.49.8.18.09.54.22.93-.05l19.98-13.7c.34-.23.39-.57.39-.74 0-.18-.05-.51-.39-.74l-19.98-13.7c-.18-.14-.35-.18-.5-.18z"/></svg></div>
+                            <p class="paragrafo">Vídeo/Áudio</p>
+                        </div>
+                        <div class="item">
+                            <div class="icone"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 112.48 189.74" xml:space="preserve"><style>.st11{fill:#848484}</style><path class="st11" d="M90.32 189.74H22.16C9.94 189.74 0 179.81 0 167.58V22.16C0 9.94 9.94 0 22.16 0h68.15c12.23 0 22.16 9.94 22.16 22.16v145.42c.01 12.23-9.93 22.16-22.15 22.16zM22.16 3.41c-10.34 0-18.75 8.41-18.75 18.75v145.42c0 10.34 8.41 18.75 18.75 18.75h68.15c10.34 0 18.76-8.41 18.76-18.75V22.16c0-10.34-8.42-18.75-18.76-18.75H22.16z"/><path d="M87.85 101.34H24.61c-5.48 0-9.95-4.47-9.95-9.95V66.56c0-5.48 4.47-9.95 9.95-9.95h63.24c5.48 0 9.95 4.47 9.95 9.95v24.83c0 5.48-4.46 9.95-9.95 9.95zM24.63 61.71c-2.67 0-4.83 2.17-4.83 4.83v24.83c0 2.67 2.17 4.83 4.83 4.83h63.24c2.67 0 4.83-2.17 4.83-4.83V66.55c0-2.67-2.17-4.83-4.83-4.83H24.63z" fill="#19cad8"/><path class="st11" d="M110.77 154.52H1.69v3.41h109.08v-3.41zM67.6 173.84H44.87c-.95 0-1.71-.76-1.71-1.71s.76-1.71 1.71-1.71H67.6c.95 0 1.71.76 1.71 1.71-.01.95-.76 1.71-1.71 1.71z"/></svg></div>
+                            <p class="paragrafo">Native</p>
+                        </div>
+                        <div class="item">
+                            <div class="icone"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 112.48 189.74" xml:space="preserve"><style>.st11{fill:#848484}.st1{fill:#19cad8}</style><path class="st11" d="M90.32 189.74H22.16C9.94 189.74 0 179.81 0 167.58V22.16C0 9.94 9.94 0 22.16 0h68.15c12.23 0 22.16 9.94 22.16 22.16v145.42c.01 12.23-9.93 22.16-22.15 22.16zM22.16 3.41c-10.34 0-18.75 8.41-18.75 18.75v145.42c0 10.34 8.41 18.75 18.75 18.75h68.15c10.34 0 18.76-8.41 18.76-18.75V22.16c0-10.34-8.42-18.75-18.76-18.75H22.16z"/><path class="st1" d="M41.14 143.18H24.63c-5.48 0-9.95-4.47-9.95-9.95v-16.51c0-5.48 4.47-9.95 9.95-9.95h16.52c5.48 0 9.95 4.47 9.95 9.95v16.51c-.01 5.48-4.47 9.95-9.96 9.95zm-16.51-31.3c-2.67 0-4.83 2.17-4.83 4.83v16.51c0 2.67 2.17 4.83 4.83 4.83h16.52c2.67 0 4.83-2.17 4.83-4.83v-16.51c0-2.67-2.17-4.83-4.83-4.83H24.63zM87.84 143.18H71.32c-5.48 0-9.95-4.47-9.95-9.95v-16.51c0-5.48 4.47-9.95 9.95-9.95h16.52c5.48 0 9.95 4.47 9.95 9.95v16.51c0 5.48-4.47 9.95-9.95 9.95zm-16.52-31.3c-2.67 0-4.83 2.17-4.83 4.83v16.51c0 2.67 2.17 4.83 4.83 4.83h16.52c2.67 0 4.83-2.17 4.83-4.83v-16.51c0-2.67-2.17-4.83-4.83-4.83H71.32zM41.14 97.14H24.63c-5.48 0-9.95-4.47-9.95-9.95V70.68c0-5.48 4.47-9.95 9.95-9.95h16.52c5.48 0 9.95 4.47 9.95 9.95v16.51c-.01 5.48-4.47 9.95-9.96 9.95zM24.63 65.83c-2.67 0-4.83 2.17-4.83 4.83v16.51c0 2.67 2.17 4.83 4.83 4.83h16.52c2.67 0 4.83-2.17 4.83-4.83V70.66c0-2.67-2.17-4.83-4.83-4.83H24.63zM87.84 97.14H71.32c-5.48 0-9.95-4.47-9.95-9.95V70.68c0-5.48 4.47-9.95 9.95-9.95h16.52c5.48 0 9.95 4.47 9.95 9.95v16.51c0 5.48-4.47 9.95-9.95 9.95zM71.32 65.83c-2.67 0-4.83 2.17-4.83 4.83v16.51c0 2.67 2.17 4.83 4.83 4.83h16.52c2.67 0 4.83-2.17 4.83-4.83V70.66c0-2.67-2.17-4.83-4.83-4.83H71.32zM41.14 51.11H24.63c-5.48 0-9.95-4.47-9.95-9.95V24.65c0-5.48 4.47-9.95 9.95-9.95h16.52c5.48 0 9.95 4.47 9.95 9.95v16.51c-.01 5.49-4.47 9.95-9.96 9.95zM24.63 19.8c-2.67 0-4.83 2.17-4.83 4.83v16.51c0 2.67 2.17 4.83 4.83 4.83h16.52c2.67 0 4.83-2.17 4.83-4.83v-16.5c0-2.67-2.17-4.83-4.83-4.83H24.63zM87.84 51.11H71.32c-5.48 0-9.95-4.47-9.95-9.95V24.65c0-5.48 4.47-9.95 9.95-9.95h16.52c5.48 0 9.95 4.47 9.95 9.95v16.51c0 5.49-4.47 9.95-9.95 9.95zM71.32 19.8c-2.67 0-4.83 2.17-4.83 4.83v16.51c0 2.67 2.17 4.83 4.83 4.83h16.52c2.67 0 4.83-2.17 4.83-4.83v-16.5c0-2.67-2.17-4.83-4.83-4.83H71.32z"/><path class="st11" d="M110.79 154.52H1.71v3.41h109.08v-3.41zM67.6 173.84H44.87c-.95 0-1.71-.76-1.71-1.71s.76-1.71 1.71-1.71H67.6c.95 0 1.71.76 1.71 1.71-.01.95-.76 1.71-1.71 1.71z"/></svg></div>
+                            <p class="paragrafo">Mobile</p>
+                        </div>
+                        <div class="item">
+                            <div class="icone"><svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 264 190" xml:space="preserve"><style>.st11{fill:#848484}.st1{fill:#19cad8}</style><path class="st11" d="M159.57 160.42h-105c-.95 0-1.7-.76-1.7-1.71s.76-1.71 1.7-1.71h105.01c.95 0 1.7.76 1.7 1.71s-.76 1.71-1.71 1.71z"/><path class="st1" d="M41.09 97.27H24.6c-5.47 0-9.93-4.47-9.93-9.96V70.77c0-5.49 4.46-9.96 9.93-9.96h16.49c5.47 0 9.93 4.47 9.93 9.96v16.54c0 5.49-4.46 9.96-9.93 9.96zM24.61 65.92c-2.66 0-4.83 2.17-4.83 4.84V87.3c0 2.67 2.16 4.84 4.83 4.84H41.1c2.66 0 4.83-2.17 4.83-4.84V70.76c0-2.67-2.16-4.84-4.83-4.84H24.61zM87.72 97.27H71.23c-5.47 0-9.93-4.47-9.93-9.96V70.77c0-5.49 4.46-9.96 9.93-9.96h16.49c5.47 0 9.93 4.47 9.93 9.96v16.54c.01 5.49-4.46 9.96-9.93 9.96zM71.23 65.92c-2.66 0-4.83 2.17-4.83 4.84V87.3c0 2.67 2.16 4.84 4.83 4.84h16.49c2.66 0 4.83-2.17 4.83-4.84V70.76c0-2.67-2.16-4.84-4.83-4.84H71.23zM41.09 51.18H24.6c-5.47 0-9.93-4.47-9.93-9.96V24.68c0-5.49 4.46-9.96 9.93-9.96h16.49c5.47 0 9.93 4.47 9.93 9.96v16.54c0 5.49-4.46 9.96-9.93 9.96zM24.61 19.83c-2.66 0-4.83 2.17-4.83 4.84v16.54c0 2.67 2.16 4.84 4.83 4.84H41.1c2.66 0 4.83-2.17 4.83-4.84V24.67c0-2.67-2.16-4.84-4.83-4.84H24.61zM87.72 51.18H71.23c-5.47 0-9.93-4.47-9.93-9.96V24.68c0-5.49 4.46-9.96 9.93-9.96h16.49c5.47 0 9.93 4.47 9.93 9.96v16.54c.01 5.49-4.46 9.96-9.93 9.96zM71.23 19.83c-2.66 0-4.83 2.17-4.83 4.84v16.54c0 2.67 2.16 4.84 4.83 4.84h16.49c2.66 0 4.83-2.17 4.83-4.84V24.67c0-2.67-2.16-4.84-4.83-4.84H71.23z"/><path class="st11" d="M241.86 190h-31.43c-12.21 0-22.13-9.95-22.13-22.19V75.66c0-12.24 9.92-22.19 22.13-22.19h31.43c12.21 0 22.13 9.95 22.13 22.19v92.15c0 12.24-9.92 22.19-22.13 22.19zM210.43 56.89c-10.33 0-18.72 8.42-18.72 18.77v92.15c0 10.36 8.39 18.77 18.72 18.77h31.43c10.33 0 18.73-8.42 18.73-18.77V75.66c0-10.36-8.41-18.77-18.73-18.77h-31.43z"/><path class="st11" d="M234.25 171.81h-16.18c-.95 0-1.7-.76-1.7-1.71s.76-1.71 1.7-1.71h16.18c.95 0 1.7.76 1.7 1.71s-.75 1.71-1.7 1.71zM215.46 84.39h-9.2c-3.8 0-6.89-3.1-6.89-6.91s3.1-6.91 6.89-6.91h9.2c3.8 0 6.89 3.1 6.89 6.91.01 3.81-3.09 6.91-6.89 6.91zm-9.2-10.42c-1.93 0-3.5 1.57-3.5 3.51 0 1.94 1.57 3.51 3.5 3.51h9.2c1.93 0 3.5-1.57 3.5-3.51 0-1.94-1.57-3.51-3.5-3.51h-9.2zM246.02 84.39h-9.21c-3.8 0-6.89-3.1-6.89-6.91s3.1-6.91 6.89-6.91h9.21c3.8 0 6.89 3.1 6.89 6.91.01 3.81-3.09 6.91-6.89 6.91zm-9.2-10.42c-1.93 0-3.5 1.57-3.5 3.51 0 1.94 1.57 3.51 3.5 3.51h9.21c1.93 0 3.5-1.57 3.5-3.51 0-1.94-1.57-3.51-3.5-3.51h-9.21zM215.46 107.12h-9.2c-3.8 0-6.89-3.1-6.89-6.91s3.1-6.91 6.89-6.91h9.2c3.8 0 6.89 3.1 6.89 6.91.01 3.81-3.09 6.91-6.89 6.91zm-9.2-10.42c-1.93 0-3.5 1.57-3.5 3.51 0 1.94 1.57 3.51 3.5 3.51h9.2c1.93 0 3.5-1.57 3.5-3.51 0-1.94-1.57-3.51-3.5-3.51h-9.2zM246.02 107.12h-9.21c-3.8 0-6.89-3.1-6.89-6.91s3.1-6.91 6.89-6.91h9.21c3.8 0 6.89 3.1 6.89 6.91.01 3.81-3.09 6.91-6.89 6.91zm-9.2-10.42c-1.93 0-3.5 1.57-3.5 3.51 0 1.94 1.57 3.51 3.5 3.51h9.21c1.93 0 3.5-1.57 3.5-3.51 0-1.94-1.57-3.51-3.5-3.51h-9.21z"/><path class="st11" d="M190.01 147.53H22.13C9.92 147.53 0 137.58 0 125.34V22.19C0 9.95 9.92 0 22.13 0H192c12.21 0 22.13 9.95 22.13 22.19v32.99h-3.41V22.19c0-10.36-8.41-18.77-18.73-18.77H22.13c-10.33 0-18.72 8.42-18.72 18.77v103.14c0 10.36 8.39 18.79 18.72 18.79h167.89v3.41z"/></svg></div>
+                            <p class="paragrafo">Smart TV</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="positivo-oem-ads" id="positivo-oem-ads">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="conteudo">
+                            <div class="icone-titulo">
+                                <div class="icone"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50.4 56" xml:space="preserve"><path d="M45.44 40.59H19.85c-2.73 0-4.97 2.22-4.97 4.97v5.48c0 2.73 2.22 4.97 4.97 4.97h25.59c2.73 0 4.97-2.22 4.97-4.97v-5.48c0-2.74-2.23-4.97-4.97-4.97zm-28.43 4.97c0-1.56 1.28-2.84 2.84-2.84h25.59c1.56 0 2.84 1.28 2.84 2.84v5.48c0 1.56-1.28 2.84-2.84 2.84H19.85c-1.56 0-2.84-1.28-2.84-2.84v-5.48zM35.51 30.74v-5.48c0-2.73-2.22-4.97-4.97-4.97H4.97C2.23 20.3 0 22.52 0 25.27v5.48c0 2.73 2.22 4.97 4.97 4.97h25.59c2.73 0 4.97-2.22 4.97-4.97h-.02zM2.13 25.26c0-1.56 1.28-2.84 2.84-2.84h25.59c1.56 0 2.84 1.28 2.84 2.84v5.48c0 1.56-1.28 2.84-2.84 2.84H4.97c-1.56 0-2.84-1.28-2.84-2.84v-5.48zM15.6 15.41h25.59c2.73 0 4.97-2.22 4.97-4.97V4.97c0-2.73-2.22-4.97-4.97-4.97H15.6c-2.73 0-4.97 2.22-4.97 4.97v5.48c0 2.73 2.23 4.96 4.97 4.96zm28.42-4.97c0 1.56-1.28 2.84-2.84 2.84H15.6c-1.56 0-2.84-1.28-2.84-2.84V4.97c0-1.56 1.28-2.84 2.84-2.84h25.59c1.56 0 2.84 1.28 2.84 2.84v5.48h-.01z"/></svg></div>
+                                <h2 class="titulo">Positivo OEM ADS</h2>
+                            </div>
+                            <div class="servico d-md-none">
+                                <div class="lista">
+                                    <div class="item">APP INSTALL</div>
+                                    <div class="item">DESKMEDIA</div>
+                                    <div class="item">PUSH NOTIFICATION</div>
+                                </div>
+                            </div>
+                            <p class="paragrafo">Utilizamos tecnologia OEM (Original Equipment Manufacturer) para inserir anúncios integrados diretamente nos dispositivos Positivo. Com aplicativos e conteúdos pré-instalados, oferecemos uma abordagem nativa com 100% de visibilidade e maior engajamento dos usuários. </p>
+                            <p class="paragrafo">Ideal para marcas que desejam expandir seu público e aumentar a aquisição de usuários de forma segura e transparente, aproveitando a robusta infraestrutura e ampla base de dispositivos da Positivo.</p>
+                            <a href="#formulario-footer" class="btn d-none d-md-flex" title="Quero saber mais">
+                                quero saber mais
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 14.73" xml:space="preserve"><path d="M28.71 6.66 22.35.3c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41l4.66 4.66H0v2h25.59l-4.66 4.66c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l6.36-6.36c.4-.4.4-1.03.01-1.42z" fill="#fff"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div>
+                            <picture>
+                                <source media="(max-width: 799px)" srcset="<?php echo do_shortcode("[img-url]"); ?>positivo-oem-ads-img.png" />
+                                <img class="img-fluid" src="<?php echo do_shortcode("[img-url]"); ?>positivo-oem-ads-img.png" alt="Positivo OEM ADS" />
+                            </picture>
+                            <a href="#formulario-footer" class="btn d-md-none" title="Quero saber mais">
+                                quero saber mais
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 14.73" xml:space="preserve"><path d="M28.71 6.66 22.35.3c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41l4.66 4.66H0v2h25.59l-4.66 4.66c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l6.36-6.36c.4-.4.4-1.03.01-1.42z" fill="#fff"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <section class="beneficios-oem-ads">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-8 offset-md-2">
+                        <p class="titulo-2">Benefícios do Positivo OEM Ads</p>
+                    </div>
+                </div>
+                <div class="slider-beneficios-oem-ads">
+                    <div class="slider">
+                        <div class="item">
+                            <div class="icone"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" xml:space="preserve"><path d="M32 12.83c-12.8 0-24.2 6.7-29.03 17.05-.62 1.34-.62 2.89 0 4.23C7.8 44.48 19.2 51.16 32 51.16s24.2-6.7 29.03-17.05c.62-1.34.62-2.89 0-4.23C56.2 19.52 44.8 12.83 32 12.83zm26.36 20.04C54.02 42.19 43.67 48.23 32 48.23S9.99 42.2 5.64 32.88c-.27-.56-.27-1.19 0-1.74C9.98 21.81 20.33 15.78 32 15.78s22.01 6.03 26.36 15.35c.25.56.25 1.19 0 1.74z"/><path d="M32 18.72c-7.32 0-13.28 5.96-13.28 13.27S24.68 45.27 32 45.27 45.28 39.32 45.28 32 39.32 18.72 32 18.72zm0 23.6c-5.69 0-10.33-4.63-10.33-10.33S26.31 21.67 32 21.67 42.33 26.31 42.33 32 37.69 42.32 32 42.32zM13.49 5.7c-.68.46-.86 1.37-.41 2.05l2.95 4.42c.28.43.75.65 1.22.65.28 0 .56-.09.81-.25.68-.46.86-1.37.41-2.05L15.52 6.1c-.46-.68-1.37-.86-2.05-.41l.02.01zM30.52 3.97V8.4c0 .81.66 1.48 1.48 1.48.81 0 1.48-.66 1.48-1.48V3.97c0-.81-.66-1.47-1.48-1.47-.81 0-1.48.66-1.48 1.47zM48.48 6.11l-2.95 4.43c-.46.68-.27 1.59.41 2.05.25.16.53.25.81.25.47 0 .94-.24 1.22-.65l2.95-4.43c.46-.68.27-1.59-.41-2.05-.68-.46-1.59-.27-2.05.41l.02-.01zM15.52 57.9l2.95-4.42c.46-.68.27-1.59-.41-2.05-.68-.46-1.59-.27-2.05.41l-2.95 4.42c-.46.68-.27 1.59.41 2.05.25.16.53.25.81.25.47 0 .94-.24 1.22-.65l.02-.01zM33.47 60.03V55.6c0-.81-.66-1.47-1.48-1.47-.81 0-1.48.66-1.48 1.47v4.43c0 .81.66 1.47 1.48 1.47s1.48-.66 1.48-1.47zM49.7 58.55c.28 0 .56-.09.81-.25.68-.46.86-1.37.41-2.05l-2.95-4.42c-.46-.68-1.37-.86-2.05-.41-.68.44-.86 1.37-.41 2.05l2.95 4.42c.28.43.75.65 1.22.65l.02.01z"/></svg></div>
+                            <h3 class="sub-titulo">Alta visibilidade</h3>
+                            <p class="paragrafo">Anúncios integrados garantindo 100% de visibilidade e maior engajamento dos usuários.</p>
+                        </div>
+                        <div class="item">
+                            <div class="icone"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" xml:space="preserve"><path d="M57.04 24.02V12.37c0-2.98-2.43-5.41-5.41-5.41H39.86c-.4 0-.77.15-1.05.44-.28.28-.44.65-.44 1.04v.17c.1.74.8 1.32 1.57 1.32h12.04L11.33 50.59c-.57.57-.57 1.51 0 2.09.57.57 1.51.57 2.09 0l40.65-40.67v12.14c0 .42.18.8.49 1.09.32.28.74.44 1.16.4.75-.1 1.34-.82 1.31-1.61l.01-.01zM48.69 38.37c-5.69 0-10.31 4.62-10.31 10.31S42.99 59 48.69 59 59 54.38 59 48.69s-4.62-10.32-10.31-10.32zm0 17.67c-4.05 0-7.35-3.3-7.35-7.35s3.3-7.35 7.35-7.35 7.35 3.3 7.35 7.35-3.3 7.35-7.35 7.35zM15.31 5C9.62 5 5 9.62 5 15.31s4.62 10.31 10.31 10.31S25.62 21 25.62 15.31 21.01 5 15.31 5zm0 17.67c-4.05 0-7.35-3.3-7.35-7.35s3.3-7.35 7.35-7.35 7.35 3.3 7.35 7.35c.01 4.05-3.29 7.35-7.35 7.35z"/></svg></div>
+                            <h3 class="sub-titulo">Alta Taxa de Conversão</h3>
+                            <p class="paragrafo">Instalação de Apps podem ser feitas diretamente nos dispositivos, sem necessidade de redirecionamento para lojas de aplicativos, o que aumenta a taxa de instalação e engajamento.</p>
+                        </div>
+                        <div class="item">
+                        <div class="icone"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" xml:space="preserve"><path d="M22.51 2.5c-7.66 0-13.88 6.22-13.88 13.88v2.02H6.99c-3.32 0-6.02 2.7-6.02 6.02v31.07c0 3.32 2.7 6.02 6.02 6.02h31.07c3.32 0 6.02-2.7 6.02-6.02v-6.11h12.94c3.32 0 6.02-2.7 6.02-6.02v-6.81c0-3.32-2.7-6.02-6.02-6.02H44.05v-6.11c0-3.32-2.7-6.02-6.02-6.02h-1.64v-2.02c0-7.66-6.22-13.88-13.88-13.88zM11.57 16.38c0-6.04 4.9-10.94 10.94-10.94s10.94 4.9 10.94 10.94v2.02H11.57v-2.02zm45.44 17.09c1.7 0 3.07 1.38 3.07 3.07v6.81c0 1.7-1.38 3.07-3.07 3.07H27.06c-1.7 0-3.07-1.38-3.07-3.07v-6.81c0-1.7 1.38-3.07 3.07-3.07h29.95zM38.04 21.34c1.7 0 3.07 1.38 3.07 3.07v6.09H27.04c-3.32 0-6.02 2.7-6.02 6.02v6.81c0 3.32 2.7 6.02 6.02 6.02h14.07v6.11c0 1.7-1.38 3.07-3.07 3.07H6.99c-1.7 0-3.07-1.38-3.07-3.07V24.42c0-1.7 1.38-3.07 3.07-3.07h31.07-.02z"/><path d="M32.55 37.9c-.98 0-2.04.64-2.04 2.04s1.06 2.04 2.04 2.04 2.04-.64 2.04-2.04c0-.64-.23-1.17-.62-1.53-.39-.32-.88-.51-1.42-.51zM42.6 37.9c-.98 0-2.04.64-2.04 2.04s1.06 2.04 2.04 2.04 2.04-.64 2.04-2.04c0-.64-.23-1.17-.62-1.53-.38-.32-.87-.51-1.42-.51zM52.63 37.9c-.98 0-2.04.64-2.04 2.04s1.06 2.04 2.04 2.04 2.04-.64 2.04-2.04c0-.64-.23-1.17-.62-1.53-.38-.32-.87-.51-1.42-.51z"/></svg></div>
+                            <h3 class="sub-titulo">Segurança e Transparência</h3>
+                            <p class="paragrafo">Ambiente seguro com publicidade controlada, eliminando intermediários e garantindo transparência nos anúncios.</p>
+                        </div>
+                        <div class="item">
+                            <div class="icone"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" xml:space="preserve"><path d="M25.86 49.51H3.3V45.2c0-10.11 8.19-18.34 18.29-18.34 4.11 0 7.97 1.31 11.16 3.8.62.47 1.52.36 1.98-.24.24-.31.33-.71.27-1.09-.05-.36-.24-.67-.51-.89-1.98-1.55-4.13-2.69-6.38-3.42 4.06-2.34 6.58-6.67 6.58-11.4 0-7.25-5.87-13.14-13.1-13.14S8.48 6.38 8.48 13.63c0 4.73 2.52 9.05 6.58 11.4C6.33 27.94.49 35.97.49 45.21v5.69c0 .8.63 1.44 1.43 1.44h24c.8 0 1.43-.64 1.43-1.44 0-.36-.13-.69-.38-.95-.27-.27-.67-.44-1.12-.44h.01zM11.33 13.72c0-5.65 4.59-10.27 10.24-10.27s10.24 4.6 10.24 10.27-4.59 10.27-10.24 10.27c-5.66 0-10.24-4.6-10.24-10.27z"/><path d="M46.31 29.01c-9.48 0-17.2 7.74-17.2 17.25s7.72 17.25 17.2 17.25 17.2-7.74 17.2-17.25-7.72-17.25-17.2-17.25zM60.7 46.26c0 7.96-6.45 14.43-14.39 14.43s-14.39-6.47-14.39-14.43 6.45-14.43 14.39-14.43S60.7 38.3 60.7 46.26z"/><path d="M45.31 40.57h1.98c1.05 0 1.9.85 1.9 1.91 0 .65.53 1.25 1.25 1.25s1.25-.53 1.25-1.25c0-2.31-1.85-4.24-4.15-4.36v-1.38c0-.65-.53-1.25-1.25-1.25-.65 0-1.25.53-1.25 1.25v1.38c-2.3.13-4.15 2.05-4.15 4.36v.65c0 2.45 1.98 4.36 4.35 4.36h1.98c1.05 0 1.9.85 1.9 1.91v.65c0 1.05-.85 1.91-1.9 1.91h-1.98c-1.05 0-1.9-.85-1.9-1.91 0-.65-.53-1.25-1.25-1.25-.65 0-1.25.53-1.25 1.25 0 2.31 1.85 4.24 4.15 4.36v1.38c0 .65.53 1.25 1.25 1.25.65 0 1.25-.53 1.25-1.25v-1.38c2.3-.13 4.15-2.05 4.15-4.36v-.65c0-2.45-1.98-4.36-4.35-4.36h-1.98c-1.05 0-1.9-.85-1.9-1.91v-.65c0-1.06.85-1.91 1.9-1.91z"/></svg></div>
+                            <h3 class="sub-titulo">Custo-Efetividade</h3>
+                            <p class="paragrafo">A aquisição de usuários por meio de publicidade OEM tende a ser mais econômica, com um custo por instalação (CPI) menor, permitindo um retorno sobre o investimento (ROAS) mais eficiente.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
     </div>

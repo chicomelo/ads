@@ -1,0 +1,1053 @@
+// main: "../main.less"
+
+
+
+.page-template-template-nossas-solucoes{
+    .footer__ads::before{
+        background-color: #272728;
+    }
+    .banner-interna{
+        background-image: url('../img/nossas-solucoes-banner-mobile.jpg');
+    }
+}
+
+
+
+.nossas-solucoes__wrapper{
+    background-color: @black;
+
+    .icone-titulo{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        justify-content: flex-start;
+        .icone{
+            svg{
+                fill: @green1;
+                display: block;
+            }
+        }
+    }
+
+    .conectamos-marcas{
+        padding: 82px 0;
+        .servicos{
+            display: none;
+        }
+    }
+
+    .people-based-ads{
+        background-image: url('../img/people-based-ads-bg-mobile.jpg');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: #171717;
+        padding: 142px 0 82px 0;
+        .icone-titulo{
+            .icone{
+                width: 32px;
+            }
+        }
+        .container{
+            background-image: url('../img/people-based-ads-bg-linhas-mobile.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center bottom 45%;
+        }
+        .btn{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .servico{
+            margin: 32px 0;
+            .lista{
+                margin-top: 16px;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+                .item{
+                    border: 2px solid @purple1;
+                    text-align: center;
+                    color: @white;
+                    font-size: 1.3rem;
+                    font-weight: 500;
+                    padding: 8px 16px;
+                    border-radius: 50px;
+                }
+            }
+        }
+        .sub-titulo{
+            font-size: 2.0rem;
+            font-weight: 500;
+            color: @white;
+            margin-top: 48px;
+            margin-bottom: 32px;
+        }
+        .lista{
+            li{
+                margin-top: 16px;
+                color: @white;
+                font-size: 1.6rem;
+                position: relative;
+                padding-left: 34px;
+                &::before{
+                    position: absolute;
+                    left: 4px;
+                    top: 50%;
+                    transform: translate(0,-50%);
+                    content: "";
+                    display: block;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background-color: @green1;
+                }
+                &::after{
+                    position: absolute;
+                    left: 0px;
+                    transform: translate(0,-50%);
+                    top: 50%;
+                    content: "";
+                    display: block;
+                    width: 18px;
+                    height: 18px;
+                    border-radius: 50%;
+                    border: 1px solid #4F4F4F;
+
+                }
+            }
+        }
+        .como-funciona{
+            padding: 82px 0;
+            .titulo-2, .paragrafo{
+                text-align: center;
+            }
+
+            .slider-como-funciona{
+                margin-top: 48px;
+
+                .slider{
+                    .item{
+                        padding: 10px 24px 0 24px;
+                        .icone{
+                            background-color: @purple1;
+                            width: 96px;
+                            height: 96px;
+                            border-radius: 28px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            position: relative;
+                            .nro{
+                                top: -10px;
+                                left: -10px;
+                                position: absolute;
+                                font-size: 1.6rem;
+                                font-weight: 700;
+                                color: @black;
+                                width: 32px;
+                                height: 32px;
+                                border-radius: 50%;
+                                background-color: @white;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
+                            svg{
+                                fill: @green1;
+                                width: 42px;
+                                display: block;
+                            }
+                        }
+                        .sub-titulo{
+                            font-size: 2.1rem;
+                            margin: 24px 0 16px 0;
+                        }
+                        .paragrafo{
+                            text-align: left;
+                            margin-top: 0;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .beneficios-people-based-ads{
+
+            padding: 0 0 82px 0;
+            overflow: hidden;
+
+            .container-fluid{
+                background: none;
+            }
+            .slider-beneficios{
+                margin-top: 48px;
+                position: relative;
+                width: 100%;
+                .slider{
+                    .item{
+                        border-radius: 26px;
+                        background-color: rgba(40, 40, 40, 0.5);
+                        backdrop-filter: blur(6px);
+                        padding: 32px;
+                        margin: 0 8px;
+                        .icone{
+                            width: 62px;
+                            svg{
+                                fill: @green1;
+                            }
+                        }
+                        .sub-titulo{
+                            font-size: 2.0rem;
+                            margin: 64px 0 24px 0;
+                        }
+                        .paragrafo{
+                            margin: 0;
+                            font-size: 1.6rem;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    .positivo-ads-platform{
+        background-image: url('../img/positivo-ads-platform-bg-mobile.jpg');
+        background-position: top;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: @black;
+        padding: 142px 0 0 0;
+        .btn{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .icone-titulo{
+            .icone{
+                width: 26px;
+            }
+        }
+
+        .servico{
+            margin: 32px 0;
+            .lista{
+                margin-top: 16px;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+                .item{
+                    border: 2px solid #472CCE;
+                    text-align: center;
+                    color: @white;
+                    font-size: 1.3rem;
+                    font-weight: 500;
+                    padding: 8px 16px;
+                    border-radius: 50px;
+                }
+            }
+        }
+
+        .frase{
+            color: @white;
+            font-size: 2.0rem;
+            line-height: 1.6;
+            margin-top: 42px;
+            b{
+                color: @green1;
+                font-weight: 500;
+            }
+        }
+    }
+
+    .formatos-disponiveis-ads-platform{
+        padding: 82px 0;
+        .titulo-2, .paragrafo{
+            text-align: center;
+        }
+        .slider-formatos-disponiveis{
+            margin-top: 48px;
+            .slider{
+                .item{
+                    padding: 0 24px 0 24px;
+                    .icone{
+                        
+                        svg{
+                            margin: 0 auto;
+                            height: 190px;
+                            display: block;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    .positivo-oem-ads{
+        background-color: #272728;
+        background-image: url('../img/positivo-oem-ads-bg.png');
+        background-repeat: no-repeat;
+        background-size: 98%;
+        background-position: right 0px bottom 100px;
+        padding: 82px 0 0 0;
+        .col-md-6{
+            display: flex;
+            align-items: center;
+        }
+
+        .icone-titulo{
+            .icone{
+                width: 42px;
+            }
+        }
+        .btn{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .servico{
+            margin: 32px 0;
+            .lista{
+                margin-top: 16px;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+                .item{
+                    border: 2px solid @green1;
+                    text-align: center;
+                    color: @white;
+                    font-size: 1.3rem;
+                    font-weight: 500;
+                    padding: 8px 16px;
+                    border-radius: 50px;
+                }
+            }
+        }
+        img{
+            margin-top: 92px;
+        }
+    }
+    .beneficios-oem-ads{
+        padding: 82px 0;
+        background-color: #272728;
+        .titulo-2, .paragrafo{
+            text-align: center;
+        }
+        .slider-beneficios-oem-ads{
+            margin-top: 48px;
+            .slider{
+                .item{
+                    border: 1px solid @purple1;
+                    border-radius: 26px;
+                    padding: 32px;
+                    margin: 0 12px;
+                    .icone{
+                        svg{
+                            fill: @green1;
+                            display: block;
+                            width: 50px;
+                        }
+                    }
+                    .sub-titulo{
+                        color: @white;
+                        font-size: 2.0rem;
+                        font-weight: 700;
+                        line-height: 1.3;
+                        margin: 42px 0 16px 0;
+                    }
+                    p{
+                        text-align: left;
+                        margin: 0;
+                        font-size: 1.6rem;
+                        height: 180px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media (min-width: 960px) {
+    .page-template-template-nossas-solucoes{
+        .banner-interna{
+            background-image: url('../img/nossas-solucoes-banner.jpg');
+        }
+    }
+
+    .nossas-solucoes__wrapper{
+        .icone-titulo{
+            flex-direction: row;
+            align-items: center;
+            gap: 32px;
+        }
+        .conectamos-marcas{
+            background-image: url('../img/conectamos-marcas-bg.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 1260px;
+            height: 1051px;
+            padding: 92px 0 0 0;
+
+            .titulo, .paragrafo{
+                text-align: center;
+            }
+            .servicos{
+                display: block;
+                position: relative;
+                margin-top: 110px;
+                .servico{
+                    top:0;
+                    left:0;
+                    position: absolute;
+                    a{
+                        display: block;
+                        position: relative;
+                        &::before{
+                            position: absolute;
+                            content: "";
+                            display: block;
+                            height: 100px;
+                            width: 100px;
+                            top:0;
+                        }
+                    }
+                    .sub-titulo{
+                        font-size: 2.4rem;
+                        font-weight: 500;
+                        color: @white;
+                        text-align: center;
+                    }
+                    .lista{
+                        margin-top: 16px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: center;
+                        gap: 8px;
+                        .item{
+                            border: 2px solid @purple1;
+                            text-align: center;
+                            color: @white;
+                            font-size: 1.3rem;
+                            font-weight: 500;
+                            padding: 8px 16px;
+                            border-radius: 50px;
+                        }
+                    }
+                }
+                .servico-1{
+                    left: 0vw;
+                    width: 250px;
+                    a{
+                        &::before{
+                            right: -100px;
+                        }
+                    }
+                }
+                .servico-2{
+                    left: auto;
+                    right: 0vw;
+                    width: 270px;
+                    a{
+                        &::before{
+                            left: -100px;
+                        }
+                    }
+                    .lista{
+                        .item{
+                            border-color: #472CCE;
+                        }
+                    }
+                }
+                .servico-3{
+                    left: 50%;
+                    top: 47vh;
+                    transform: translate(-50%,0);
+                    width: 230px;
+                    a{
+                        &::before{
+                            height: 120px;
+                            top: -120px;
+                            left: 50%;
+                            transform: translate(-50%,0);
+                        }
+                    }
+                    .lista{
+                        .item{
+                            border-color: @green1;
+                        }
+                    }
+                }
+            }
+        }
+        .people-based-ads{
+            background-image: url('../img/people-based-ads-bg.jpg');
+            background-size: 1280px;
+            background-position: top center;
+            padding: 92px 0 124px 0;
+            .container{
+                background: none;
+            }
+            .btn{
+                margin-left: 0;
+            }
+            .icone-titulo{
+                .icone{
+                    width: 44px;
+                }
+            }
+            .titulo{
+                br{
+                    display: none;
+                }
+            }
+            .sub-titulo{
+                font-size: 2.4rem;
+                margin-top: 42px;
+                margin-bottom: 24px;
+            }
+            .lista{
+                li{
+                    margin-top: 12px;
+                    font-size: 1.6rem;
+                    padding-left: 34px;
+                }
+            }
+            .como-funciona{
+                padding: 92px 0 92px 0;
+                .slider-como-funciona{
+                    margin-top: 64px;
+                    .slider{
+                        display: flex;
+                        gap: 42px;
+                        .item{
+                            padding: 0;
+                            .icone{
+                                width: 92px;
+                                height: 92px;
+                                border-radius: 30px;
+                                .nro{
+                                    font-size: 1.8rem;
+                                    width: 36px;
+                                    height: 36px;
+                                }
+                                svg{
+                                    width: 42px;
+                                }
+                            }
+                            .sub-titulo{
+                                font-size: 1.8rem;
+                                margin: 24px 0 16px 0;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .beneficios-people-based-ads{
+                background: url('../img/beneficios-people-based-ads-bg.png') no-repeat;
+                background-position: left center;
+                background-size: 560px;
+                padding: 88px 0 72px 0;
+                
+
+                .conteudo__wrapper{
+                    position: relative;
+                }
+
+                .container{
+                    position: absolute;
+                    top: 0;
+                    width: 100%;
+                    height: 92%;
+                    left: 50%;
+                    transform: translate(-50%, 0);
+                    display: flex;
+                    align-items: center;
+                }
+                .col-md-8{
+                    padding-right: 0;
+                }
+                .titulo-2{
+                    padding-right: 24px;
+                }
+                .slider-beneficios{
+                    margin: 0;
+                    width: 100%;
+                    .slider{
+                        position: relative;
+                        .item{
+                            border-radius: 20px;
+                            padding: 32px;
+                            margin: 0 12px;
+                            .icone{
+                                width: 56px;
+                            }
+                            .sub-titulo{
+                                font-size: 2.1rem;
+                                margin: 42px 0 16px 0;
+                            }
+                            .paragrafo{
+                                font-size: 1.5rem;
+                            }
+                        }
+                        .slick-prev{
+                            bottom: -20px;
+                            left: 42%;
+                        }
+                        .slick-next{
+                            bottom: -20px;
+                            right: 42%;
+                        }
+
+                    }
+                }
+            }
+        }
+        .positivo-ads-platform{
+            background-image: url('../img/positivo-ads-platform-bg.jpg');
+            background-position: center right;
+            background-size: 864px;
+            padding: 92px 0 72px 0;
+            .btn{
+                margin-left: 0;
+            }
+            .icone-titulo{
+                .icone{
+                    width: 30px;
+                }
+            }
+            .titulo{
+                br{
+                    display: none;
+                }
+            }
+            .frase{
+                font-size: 1.8rem;
+            }
+        }
+        .formatos-disponiveis-ads-platform{
+            padding: 0 0 112px 0;
+            .slider-formatos-disponiveis{
+                margin-top: 42px;
+                .slider{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 64px;
+                    .item{
+                        padding: 0;
+                        .icone{
+                            svg{
+                                height: 124px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .positivo-oem-ads{
+            background-size: 840px;
+            background-position: right top 92px;
+            padding: 136px 0 92px 0;
+
+            img{
+                margin-top: 0;
+            }
+            .icone-titulo{
+                .icone{
+                    width: 46px;
+                }
+            }
+            .btn{
+                margin-left: 0;
+            }
+        }
+        .beneficios-oem-ads{
+            padding: 64px 0 124px 0;
+            .slider-beneficios-oem-ads{
+                margin-top: 42px;
+                .slider{
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    gap: 24px;
+                    .item{
+                        border-radius: 26px;
+                        padding: 32px;
+                        width: 48%;
+                        margin: 0;
+                        .icone{
+                            svg{
+                                width: 50px;
+                            }
+                        }
+                        .sub-titulo{
+                            font-size: 2.0rem;
+                            margin: 42px 0 24px 0;
+                        }
+                        p{
+                            font-size: 1.6rem;
+                            height: 128px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+@media (min-width: 1200px) {
+    .nossas-solucoes__wrapper{
+        .conectamos-marcas{
+            background-size: 1360px;
+            height: 1145px;
+            padding: 92px 0 0 0;
+            .servicos{
+                margin-top: 106px;
+                .servico{
+
+                    .sub-titulo{
+                        font-size: 2.8rem;
+                    }
+                    .lista{
+                        gap: 12px;
+                        .item{
+                            font-size: 1.4rem;
+                            padding: 10px 20px;
+                        }
+                    }
+                }
+                .servico-1{
+                    width: 270px;
+                    left: 5vw;
+                }
+                .servico-2{
+                    right: 1.5vw;
+                    width: 316px;
+                }
+                .servico-3{
+                    width: 270px;
+                    top: 52vh;
+                }
+            }
+        }
+        .people-based-ads{
+            padding: 112px 0 124px 0;
+            background-size: 1480px;
+            .sub-titulo{
+                font-size: 2.4rem;
+                margin-top: 48px;
+                margin-bottom: 32px;
+            }
+            .lista{
+                li{
+                    margin-top: 16px;
+                    font-size: 2.0rem;
+                    padding-left: 34px;
+                }
+            }
+            .como-funciona{
+                padding: 112px 0 132px 0;
+                .slider-como-funciona{
+                    margin-top: 48px;
+                    .slider{
+                        gap: 42px;
+                        .item{
+                            .icone{
+                                width: 98px;
+                                height: 98px;
+                                border-radius: 30px;
+                                .nro{
+                                    font-size: 1.8rem;
+                                    width: 36px;
+                                    height: 36px;
+                                }
+                                svg{
+                                    width: 42px;
+                                }
+                            }
+                            .sub-titulo{
+                                font-size: 2.4rem;
+                                margin: 28px 0 16px 0;
+                            }
+                        }
+                    }
+                }
+            }
+            .beneficios-people-based-ads{
+                padding: 144px 0 124px 0;
+                background-size: 692px;
+
+                .titulo-2{
+                    padding-right: 42px;
+                }
+                .slider-beneficios{
+                    .slider{
+                        .item{
+                            border-radius: 20px;
+                            padding: 42px;
+                            margin: 0 16px;
+                            .icone{
+                                width: 64px;
+                            }
+                            .sub-titulo{
+                                font-size: 2.4rem;
+                                margin: 48px 0 24px 0;
+                            }
+                            .paragrafo{
+                                font-size: 1.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .positivo-ads-platform{
+            background-size: 1016px;
+            padding: 112px 0 92px 0;
+            .icone-titulo{
+                .icone{
+                    width: 32px;
+                }
+            }
+            .frase{
+                font-size: 2.4rem;
+            }
+        }
+        .formatos-disponiveis-ads-platform{
+            padding: 0 0 124px 0;
+            .slider-formatos-disponiveis{
+                margin-top: 64px;
+                .slider{
+                    gap: 72px;
+                    .item{
+                        .icone{
+                            svg{
+                                height: 164px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .positivo-oem-ads{
+            background-size: 1024px;
+            background-image: url('../img/positivo-oem-ads-bg.png');
+            background-position: right top 78px;
+            padding: 178px 0 142px 0;
+        }
+        .beneficios-oem-ads{
+            padding: 64px 0 124px 0;
+            .slider-beneficios-oem-ads{
+                margin-top: 42px;
+                .slider{
+                    gap: 32px;
+                    .item{
+                        width: 48.5%;
+                        .icone{
+                            svg{
+                                width: 56px;
+                            }
+                        }
+                        .sub-titulo{
+                            font-size: 2.4rem;
+                        }
+                        p{
+                            font-size: 1.8rem;
+                            height: 116px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1600px) {
+    .nossas-solucoes__wrapper{
+        .conectamos-marcas{
+            background-size: auto;
+            height: 1351px;
+            padding: 164px 0 0 0;
+            .servicos{
+                margin-top: 146px;
+                .servico{
+                    width: 300px;
+                    .sub-titulo{
+                        font-size: 3.6rem;
+                    }
+                    .lista{
+                        .item{
+                            backdrop-filter: blur(3px);
+                            
+                            font-size: 1.6rem;
+                            padding: 10px 20px;
+                        }
+                    }
+                }
+                .servico-1{
+                    left: 8vw;
+                }
+                .servico-2{
+                    right: 6vw;
+                    width: 348px;
+                }
+                .servico-3{
+                    top: 50vh;
+                }
+            }
+        }
+        .people-based-ads{
+            background-size: 1917px;
+            padding: 124px 0 156px 0;
+            .sub-titulo{
+                font-size: 3.2rem;
+                margin-top: 48px;
+                margin-bottom: 32px;
+            }
+            .lista{
+                li{
+                    margin-top: 16px;
+                    font-size: 2.4rem;
+                    padding-left: 34px;
+                }
+            }
+            .como-funciona{
+                padding: 142px 0 164px 0;
+                .slider-como-funciona{
+                    margin-top: 92px;
+                    .slider{
+                        gap: 48px;
+                        .item{
+                            .icone{
+                                width: 116px;
+                                height: 116px;
+                                border-radius: 38px;
+                                .nro{
+                                    font-size: 2.4rem;
+                                    width: 45px;
+                                    height: 45px;
+                                }
+                                svg{
+                                    width: 60px;
+                                }
+                            }
+                            .sub-titulo{
+                                font-size: 2.8rem;
+                                margin: 36px 0 24px 0;
+                            }
+                        }
+                    }
+                }
+            }
+            .beneficios-people-based-ads{
+                background-size: auto;
+                padding: 144px 0 192px 0;
+                .col-md-4{
+                    .conteudo{
+                        height: 84%;
+                    }
+                }
+                .titulo-2{
+                    padding-right: 64px;
+                }
+                .slider-beneficios{
+                    .slider{
+                        .item{
+                            border-radius: 24px;
+                            padding: 48px;
+                            margin: 0 16px;
+                            .icone{
+                                width: 84px;
+                            }
+                            .sub-titulo{
+                                font-size: 2.8rem;
+                                margin: 64px 0 24px 0;
+                            }
+                            .paragrafo{
+                                font-size: 1.8rem;
+                            }
+                        }
+                        .slick-prev{
+                            left: 44%;
+                        }
+                        .slick-next{
+                            right: 44%;
+                        }
+                    }
+                }
+            }
+        }
+        .positivo-ads-platform{
+            background-size: 1423px;
+            padding: 142px 0;
+            .icone-titulo{
+                .icone{
+                    width: 36px;
+                }
+            }
+            .frase{
+                font-size: 3.2rem;
+            }
+        }
+        .formatos-disponiveis-ads-platform{
+            padding: 0 0 164px 0;
+            .slider-formatos-disponiveis{
+                margin-top: 72px;
+                .slider{
+                    gap: 112px;
+                    .item{
+
+                        .icone{
+                            svg{
+                                height: 190px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .positivo-oem-ads{
+            background-size: 1200px;
+            background-position: right top 92px;
+            padding: 242px 0 192px 0;
+            .icone-titulo{
+                .icone{
+                    width: 52px;
+                }
+            }
+        }
+        .beneficios-oem-ads{
+            padding: 92px 0 192px 0;
+            .slider-beneficios-oem-ads{
+                margin-top: 72px;
+                .slider{
+                    gap: 36px;
+                    .item{
+                        width: 48.5%;
+                        border-radius: 36px;
+                        padding: 40px;
+
+                        .icone{
+                            svg{
+                                width: 56px;
+                            }
+                        }
+                        .sub-titulo{
+                            font-size: 2.7rem;
+                        }
+                        p{
+                            font-size: 1.7rem;
+                            height: 82px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

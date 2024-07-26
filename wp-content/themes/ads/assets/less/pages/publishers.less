@@ -1,0 +1,491 @@
+// main: "../main.less"
+
+
+
+.page-template-template-publishers{
+    .footer__ads::before{
+        display: none;
+    }
+    .banner-interna{
+        background-image: url('../img/publishers-banner-bg-mobile.jpg');
+    }
+    .newsletter__wrapper{
+        display: none;
+    }
+    .formulario-footer{
+        display: none;
+    }
+    .footer-bottom{
+        margin: 0;
+    }
+}
+
+.publishers__wrapper{
+    background-color: @black;
+
+    .maximize{
+        background-image: url('../img/maximize-bg.png');
+        background-repeat: no-repeat;
+        background-position: left -130px top 50px;
+        background-size: 530px;
+        padding: 88px 0;
+        .col-md-6{
+            display: flex;
+            align-items: center;
+            img{
+                margin: 0 auto;
+                margin-bottom: 82px;
+                display: block;
+            }
+        }
+    }
+
+    .porque-publisher{
+        background-image: url('../img/porque-publisher-bg-mobile.png');
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-size: 420px;
+        
+        padding: 64px 0 82px 0;
+        .titulo, .paragrafo{
+            text-align: center;
+        }
+        .slider-porque-publisher{
+            margin-top: 48px;
+            .slider{
+                .item{
+                    background: rgba(40,40,40,0.5);
+                    border: 1px solid #2B2B2D;
+                    border-radius: 26px;
+                    padding: 32px;
+                    margin: 0 8px;
+                    box-shadow: 12px 12px 16px rgba(0,0,0,0.12);
+                    backdrop-filter: blur(6px);
+                    .icone{
+                        svg{
+                            fill: @green1;
+                            display: block;
+                            width: 50px;
+                        }
+                    }
+                    .sub-titulo{
+                        color: @white;
+                        font-size: 2.0rem;
+                        font-weight: 700;
+                        line-height: 1.3;
+                        margin: 42px 0 16px 0;
+                    }
+                    p{
+                        text-align: left;
+                        margin: 0;
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+        }
+        .btn{
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .tecnologias{
+        background-image: url('../img/tecnologias-bg-mobile.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        padding: 82px 0;
+        .titulo, .paragrafo{
+            text-align: center;
+        }
+        .btn{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .slider-tecnologias{
+            margin-top: 48px;
+            .slider{
+                .item{
+                    padding: 0 8px 0 8px;
+                    .icone{
+                        background-color: @purple1;
+                        width: 96px;
+                        height: 96px;
+                        border-radius: 28px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: relative;
+                        svg{
+                            fill: @green1;
+                            width: 60px;
+                            display: block;
+                        }
+                    }
+                    .sub-titulo{
+                        font-weight: 500;
+                        font-size: 2.0rem;
+                        margin: 24px 0 16px 0;
+                        color: @white;
+                        line-height: 1.4;
+                    }
+                    .paragrafo{
+                        font-size: 1.6rem;
+                        text-align: left;
+                        margin-top: 0;
+                    }
+                }
+            }
+
+        }
+    }
+
+    .formatos-disponiveis-publishers{
+        padding: 82px 0;
+        background-color: #272728;
+        .titulo, .paragrafo{
+            text-align: center;
+        }
+        .slider-formatos-disponiveis-publishers{
+            margin-top: 48px;
+            .slider{
+                .item{
+                    border: 1px solid @purple1;
+                    border-radius: 26px;
+                    padding: 32px;
+                    margin: 0 8px;
+                    img{
+                        display: block;
+                        max-width: 100%;
+                    }
+                    .sub-titulo{
+                        color: @white;
+                        font-size: 2.0rem;
+                        font-weight: 700;
+                        line-height: 1.3;
+                        margin: 36px 0 12px 0;
+                    }
+                    .paragrafo{
+                        text-align: left;
+                        margin: 0;
+                        margin-bottom: 24px;
+                        & + .paragrafo{
+                            min-height: 231px;
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .formulario-publishers{
+        padding: 82px 0 64px 0;
+        background-color: #171717;
+        display: block;
+        margin: 0;
+        .col-md-5{
+            align-items: flex-start;
+        }
+    }
+}
+
+@media (min-width: 960px) {
+
+    .page-template-template-publishers{
+        .banner-interna{
+            background-image: url('../img/publishers-banner-bg.jpg');
+
+        }
+    }
+
+    .publishers__wrapper{
+        .maximize{
+            padding: 120px 0;
+            background-size: 600px;
+            background-position: left;
+            .col-md-6{
+                img{
+                    margin: 0 auto;
+                    max-width: 380px;
+                }
+            }
+
+        }
+        .porque-publisher{
+            background-image: url('../img/porque-publisher-bg.png');
+            background-position: bottom right;
+            background-size: 760px;
+            padding: 64px 0 124px 0;
+            .slider-porque-publisher{
+                margin-top: 42px;
+                .slider{
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    gap: 24px;
+                    .item{
+                        margin: 0;
+                        border-radius: 26px;
+                        padding: 32px;
+                        width: 48%;
+                        .icone{
+                            svg{
+                                width: 50px;
+                            }
+                        }
+                        .sub-titulo{
+                            font-size: 2.0rem;
+                            margin: 42px 0 24px 0;
+                        }
+                        p{
+                            font-size: 1.6rem;
+                        }
+                    }
+                }
+            }
+        }
+        .tecnologias{
+            background-image: url('../img/tecnologias-bg.jpg');
+            padding: 92px 0 92px 0;
+            .slider-tecnologias{
+                margin-top: 64px;
+                .slider{
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin: 0 -20px;
+                    gap: 42px 0;
+                    .item{
+                        width: 33.33333333%;
+                        padding: 0 20px;
+                        .icone{
+                            width: 92px;
+                            height: 92px;
+                            border-radius: 30px;
+                            svg{
+                                width: 48px;
+                            }
+                        }
+                        .sub-titulo{
+                            margin: 24px 0 16px 0;
+                        }
+                    }
+                }
+            }
+        }
+        .formatos-disponiveis-publishers{
+            padding: 92px 0;
+            .slider-formatos-disponiveis-publishers{
+                margin-top: 42px;
+                .slider{
+                    display: flex;
+                    align-items: flex-start;
+                    flex-wrap: wrap;
+                    gap: 24px;
+                    .item{
+                        border-radius: 26px;
+                        padding: 32px;
+                        width: 48%;
+                        margin: 0;
+                        .sub-titulo{
+                            font-size: 2.0rem;
+                        }
+                        img{
+                            max-width: 300px;
+                        }
+                        .paragrafo{
+                            & + .paragrafo{
+                                min-height: 180px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .formulario-publishers{
+            padding: 92px 0;
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .publishers__wrapper{
+        .maximize{
+            padding: 120px 0;
+            background-size: 600px;
+            .col-md-6{
+                img{
+                    max-width: 440px;
+                }
+            }
+        }
+        .porque-publisher{
+            padding: 64px 0 124px 0;
+            .slider-porque-publisher{
+                margin-top: 42px;
+                .slider{
+                    gap: 32px;
+                    .item{
+                        width: 48.5%;
+                        .icone{
+                            svg{
+                                width: 56px;
+                            }
+                        }
+                        .sub-titulo{
+                            font-size: 2.4rem;
+                        }
+                        p{
+                            font-size: 1.6rem;
+                        }
+                    }
+                }
+            }
+        }
+        .tecnologias{
+            padding: 112px 0 132px 0;
+            .slider-tecnologias{
+                margin-top: 48px;
+                .slider{
+                    gap: 48px 0;
+                    .item{
+                        .icone{
+                            width: 98px;
+                            height: 98px;
+                            border-radius: 30px;
+                            svg{
+                                width: 64px;
+                            }
+                        }
+                        .sub-titulo{
+                            font-size: 2.4rem;
+                            margin: 28px 0 16px 0;
+                        }
+                        .paragrafo{
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+            }
+        }
+        .formatos-disponiveis-publishers{
+            padding: 124px 0;
+            .slider-formatos-disponiveis-publishers{
+                margin-top: 42px;
+                .slider{
+                    gap: 32px;
+                    .item{
+                        width: 48.5%;
+                        .sub-titulo{
+                            font-size: 2.4rem;
+                        }
+                        img{
+                            max-width: 380px;
+                        }
+                        .paragrafo{
+                            & + .paragrafo{
+                                min-height: 173px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .formulario-publishers{
+            padding: 124px 0 92px 0;
+        }
+    }
+}
+
+@media (min-width: 1600px) {
+    .publishers__wrapper{
+        .maximize{
+            padding: 200px 0;
+            background-size: auto;
+            .col-md-6{
+                img{
+                    max-width: fit-content;
+                }
+            }
+        }
+        .porque-publisher{
+            background-size: auto;
+            padding: 92px 0 192px 0;
+            .slider-porque-publisher{
+                margin-top: 72px;
+                .slider{
+                    gap: 36px;
+                    .item{
+                        width: 48.5%;
+                        border-radius: 36px;
+                        padding: 40px;
+                        .icone{
+                            svg{
+                                width: 56px;
+                            }
+                        }
+                        .sub-titulo{
+                            font-size: 2.7rem;
+                        }
+                        p{
+                            font-size: 1.7rem;
+                        }
+                    }
+                }
+            }
+        }
+        .tecnologias{
+            padding: 142px 0 164px 0;
+            .slider-tecnologias{
+                margin-top: 92px;
+                .slider{
+                    gap: 64px 0;
+                    .item{
+                        .icone{
+                            width: 116px;
+                            height: 116px;
+                            border-radius: 38px;
+                            svg{
+                                width: 74px;
+                            }
+                        }
+                        .sub-titulo{
+                            font-size: 2.8rem;
+                            margin: 36px 0 24px 0;
+                        }
+                        .paragrafo{
+                            font-size: 1.8rem;
+                        }
+                    }
+                }
+            }
+        }
+        .formatos-disponiveis-publishers{
+            padding: 164px 0;
+            .slider-formatos-disponiveis-publishers{
+                margin-top: 72px;
+                .slider{
+                    gap: 36px;
+                    .item{
+                        width: 48.5%;
+                        border-radius: 36px;
+                        padding: 48px;
+                        img{
+                            max-width: none;
+                        }
+                        .sub-titulo{
+                            font-size: 2.7rem;
+                        }
+                        .paragrafo{
+                            & + .paragrafo{
+                                min-height: 192px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .formulario-publishers{
+            padding: 164px 0 108px 0;
+           
+        }
+    }
+}

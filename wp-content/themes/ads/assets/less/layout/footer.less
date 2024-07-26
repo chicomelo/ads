@@ -16,7 +16,7 @@
     }
     .newsletter__wrapper{
         background-color: @purple1;
-        padding: 24px;
+        padding: 32px 24px;
         border-radius: 24px;
         display: flex;
         align-items: flex-start;
@@ -24,6 +24,7 @@
         position: relative;
         z-index: 1;
         flex-direction: column;
+        flex-wrap: wrap;
         .newsletter-titulo{
             display: flex;
             flex-direction: column;
@@ -42,127 +43,80 @@
                 line-height: 1.2;
             }
         }
-        form{
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            margin-top: 24px;
-            gap: 24px;
+        .wpcf7{
             width: 100%;
-            input{
-                color: @white;
-                background: none;
-                border: 1px solid @white;
-                border-radius: 10px;
-                width: 100%;
-                padding: 16px 20px;
-                outline: none;
-                font-size: 1.6rem;
-                transition: 0.2s all;
-                &:focus{
-                    border-color: @green1;
-                }
-                &::placeholder {
-                    opacity: 0.6;
-                    color: @white;
+            .wpcf7-response-output{
+                display: none;
+            }
+            .wpcf7-form-control-wrap{
+                position: relative;
+                .wpcf7-not-valid-tip{
+                    position: absolute;
+                    font-size: 1.4rem;
+                    padding-top: 4px;
+                    color: #fd5e5e;
                 }
             }
-            button{
-                border: none;
-                background-color: @green1;
-                padding: 18px 32px;
-                border-radius: 64px;
-                transition: 0.2s all;
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                width: 100%;
-                &:hover{
-                    background-color: darken(@green1, 10%);
-                }
-                span{
-                    color: @white;
-                    font-size: 1.6rem;
-                }
-                svg{
-                    width: 28px;
-                    display: block;
-                }
-            }
-        }
-    }
-
-    .formulario-footer{
-        margin-top: 82px;
-
-        .col-md-5{
-            display: flex;
-            align-items: center;
-        }
-        .icone{
-            width: 48px;
-            margin-bottom: 32px;
-            svg{
-                display: block;
-            }
-        }
-
-        .form-footer{
-            padding: 48px 0;
-            p{
-                margin-bottom: 20px;
-                label{
-                    color: #B2B1B1;
-                    font-size: 1.6rem;
-                    display: block;
-                    margin-bottom: 10px;
-                }
-                input, textarea{
-                    width: 100%;
-                    color: @white;
-                    background: none;
-                    border: 1px solid #4E4E4E;
-                    border-radius: 10px;
-                    width: 100%;
-                    padding: 16px 12px;
-                    outline: none;
-                    font-size: 1.6rem;
-                    transition: 0.2s all;
-                    &:focus{
-                        border-color: @purple2;
-                    }
-                    &::placeholder {
-                        opacity: 0.3;
-                        color: @white;
-                    }
-                }
-
-                textarea{
-                    height: 120px;
-                    line-height: 1.2;
-                }
-            }
-            .btn-enviar{
-                margin: 0;
-                button{
-                    background-color: @purple1;
-                    border: none;
-                    color: @white;
-                    font-size: 1.6rem;
+            form{
+                p{
                     display: flex;
                     align-items: center;
-                    justify-content: space-between;
-                    width: 100%;
-                    padding: 16px 32px;
-                    border-radius: 30px;
-                    gap: 142px;
-                    margin-left: auto;
-                    margin-right: 0;
-                    svg{
-                        width: 28px;
-                        display: block;
+                    flex-direction: column;
+                    margin-top: 24px;
+                    gap: 24px;
+                    input{
+                        color: @white;
+                        background: none;
+                        border: 1px solid @white;
+                        border-radius: 10px;
+                        width: 100%;
+                        padding: 16px 20px;
+                        outline: none;
+                        font-size: 1.6rem;
+                        transition: 0.2s all;
+                        &:focus{
+                            border-color: @green1;
+                        }
+                        &::placeholder {
+                            opacity: 0.6;
+                            color: @white;
+                        }
+                    }
+                    button{
+                        border: none;
+                        background-color: @green1;
+                        padding: 18px 32px;
+                        border-radius: 64px;
+                        transition: 0.2s all;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        width: 100%;
+                        &:hover{
+                            background-color: darken(@green1, 10%);
+                        }
+                        span{
+                            color: @white;
+                            font-size: 1.6rem;
+                        }
+                        svg{
+                            width: 28px;
+                            display: block;
+                        }
                     }
                 }
+            }
+
+        }
+
+        .privacidade{
+            color: @white;
+            font-size: 1.4rem;
+            width: 100%;
+            margin-top: 20px;
+
+            a{
+                text-decoration: underline;
             }
         }
     }
@@ -222,7 +176,104 @@
     }
 
 }
+.formulario-footer{
+    margin-top: 82px;
 
+    .col-md-5{
+        display: flex;
+        align-items: center;
+    }
+    .icone{
+        width: 48px;
+        margin-bottom: 32px;
+        svg{
+            display: block;
+        }
+    }
+
+    .form-footer{
+        padding: 48px 0;
+        p{
+            margin-bottom: 20px;
+            label{
+                color: #B2B1B1;
+                font-size: 1.6rem;
+                display: block;
+                margin-bottom: 10px;
+            }
+            input, textarea{
+                width: 100%;
+                color: @white;
+                background: none;
+                border: 1px solid #4E4E4E;
+                border-radius: 10px;
+                width: 100%;
+                padding: 16px 12px;
+                outline: none;
+                font-size: 1.6rem;
+                transition: 0.2s all;
+                &:focus{
+                    border-color: @purple2;
+                }
+                &::placeholder {
+                    opacity: 0.3;
+                    color: @white;
+                }
+            }
+            textarea{
+                height: 120px;
+                line-height: 1.2;
+            }
+        }
+        .privacidade{
+            line-height: 1.4;
+            color: #B2B1B1;
+            font-size: 1.4rem;
+            a{
+                color: #B2B1B1;
+                text-decoration: underline;
+                transition: all 0.2s;
+                &:hover{
+                    color: @white;
+                }
+            }
+        }
+        .btn-enviar{
+            margin: 0;
+            button{
+                background-color: @purple1;
+                border: none;
+                color: @white;
+                font-size: 1.6rem;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                padding: 16px 32px;
+                border-radius: 30px;
+                gap: 142px;
+                margin-left: auto;
+                margin-right: 0;
+                transition: all 0.2s;
+                svg{
+                    width: 28px;
+                    display: block;
+                }
+                &:hover{
+                    background-color: @purple2;
+                }
+            }
+        }
+        .wpcf7-not-valid-tip{
+            font-size: 1.4rem;
+            padding-top: 4px;
+            color: #fd5e5e;
+        }
+        .wpcf7-response-output{
+            display: none;
+        }
+    }
+}
 
 @media (min-width: 960px) {
     .footer__ads{
@@ -230,15 +281,17 @@
             height: 75px;
         }
         .newsletter__wrapper{
-            padding: 42px 32px;
             border-radius: 40px;
             flex-direction: row;
             align-items: center;
             border-radius: 40px;
+            padding: 42px 32px 24px 32px;
             .newsletter-titulo{
                 flex-direction: row;
                 align-items: center;
                 gap: 16px;
+                width: 38%;
+
                 .icone{
                     width: 48px;
                 }
@@ -247,63 +300,39 @@
                     width: 220px;
                 }
             }
-            form{
-                flex-direction: row;
-                justify-content: flex-end;
-                margin-top: 0;
-                gap: 12px;
-                input{
-                    width: 210px;
-                    padding: 16px;
-                    font-size: 1.6rem;
-                }
-                button{
-                    padding: 20px 24px;
-                    width: fit-content;
-                    span{
-                        display: none;
-                    }
-                    svg{
-                        width: 24px;
-                    }
-                }
-            }
-        }
-
-        .formulario-footer{
-            margin-top: 142px;
-            .icone{
-                width: 56px;
-                margin-bottom: 32px;
-            }
-            .form-footer{
-                background-color: #2D2D2D;
-                border-radius: 36px;
-                padding: 42px;
-                p{
-                    margin-bottom: 20px;
-                    label{
-                        font-size: 1.6rem;
-                        margin-bottom: 10px;
-                    }
-                    input, textarea{
-                        padding: 16px 20px;
-                    }
-                    textarea{
-                        height: 120px;
-                    }
-                }
-                .btn-enviar{
-                    margin: 0;
-                    button{
-                        font-size: 1.6rem;
-                        padding: 16px 32px;
-                        gap: 92px;
-                        width: fit-content;
-                        svg{
-                            width: 28px;
+            .wpcf7{
+                width: 62%;
+                form{
+                    p{
+                        flex-direction: row;
+                        justify-content: flex-end;
+                        margin-top: 0;
+                        gap: 12px;
+                        input{
+                            width: 210px;
+                            padding: 16px;
+                            font-size: 1.6rem;
+                        }
+                        button{
+                            padding: 20px 24px;
+                            width: fit-content;
+                            span{
+                                display: none;
+                            }
+                            svg{
+                                width: 24px;
+                            }
                         }
                     }
+                }
+            }
+            .privacidade{
+                font-size: 1.4rem;
+                width: 100%;
+                margin-top: 20px;
+                text-align: center;
+                a{
+                    text-decoration: underline;
                 }
             }
         }
@@ -348,6 +377,43 @@
             }
         }
     }
+    .formulario-footer{
+        margin-top: 142px;
+        .icone{
+            width: 56px;
+            margin-bottom: 32px;
+        }
+        .form-footer{
+            background-color: #2D2D2D;
+            border-radius: 36px;
+            padding: 42px;
+            p{
+                margin-bottom: 20px;
+                label{
+                    font-size: 1.6rem;
+                    margin-bottom: 10px;
+                }
+                input, textarea{
+                    padding: 16px 20px;
+                }
+                textarea{
+                    height: 120px;
+                }
+            }
+            .btn-enviar{
+                margin: 0;
+                button{
+                    font-size: 1.6rem;
+                    padding: 16px 32px;
+                    gap: 92px;
+                    width: fit-content;
+                    svg{
+                        width: 28px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 1200px) {
@@ -356,10 +422,11 @@
             height: 75px;
         }
         .newsletter__wrapper{
-            padding: 42px;
+            padding: 42px 42px 24px 42px;
             border-radius: 40px;
             .newsletter-titulo{
                 gap: 24px;
+                width: 44%;
                 .icone{
                     width: 52px;
                 }
@@ -368,53 +435,25 @@
                     width: 350px;
                 }
             }
-            form{
-                gap: 16px;
-                input{
-                    width: 242px;
-                }
-                button{
-                    padding: 19px 28px;
-                    svg{
-                        width: 28px;
-                    }
-                }
-            }
-        }
-        .formulario-footer{
-            margin-top: 164px;
-            .icone{
-                width: 64px;
-                margin-bottom: 42px;
-            }
-            .form-footer{
-                border-radius: 36px;
-                padding: 42px;
-                p{
-                    margin-bottom: 20px;
-                    label{
-                        font-size: 1.6rem;
-                        margin-bottom: 10px;
-                    }
-                    input, textarea{
-                        padding: 16px 20px;
-                    }
-                    textarea{
-                        height: 120px;
-                    }
-                }
-                .btn-enviar{
-                    margin: 0;
-                    button{
-                        font-size: 1.8rem;
-                        gap: 112px;
-                        svg{
-                            width: 28px;
+            .wpcf7{
+                width: 56%;
+                form{
+                    p{
+                        gap: 16px;
+                        input{
+                            width: 242px;
+                        }
+                        button{
+                            padding: 19px 28px;
+                            svg{
+                                width: 28px;
+                            }
                         }
                     }
                 }
             }
         }
+
         .footer-bottom{
             height: 470px;
             margin-top: 92px;
@@ -440,6 +479,40 @@
             }
         }
     }
+    .formulario-footer{
+        margin-top: 164px;
+        .icone{
+            width: 64px;
+            margin-bottom: 42px;
+        }
+        .form-footer{
+            border-radius: 36px;
+            padding: 42px;
+            p{
+                margin-bottom: 20px;
+                label{
+                    font-size: 1.6rem;
+                    margin-bottom: 10px;
+                }
+                input, textarea{
+                    padding: 16px 20px;
+                }
+                textarea{
+                    height: 120px;
+                }
+            }
+            .btn-enviar{
+                margin: 0;
+                button{
+                    font-size: 1.8rem;
+                    gap: 112px;
+                    svg{
+                        width: 28px;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 1600px) {
@@ -448,7 +521,7 @@
             height: 85px;
         }
         .newsletter__wrapper{
-            padding: 52px;
+            padding: 52px 52px 32px 52px;
             border-radius: 40px;
             .newsletter-titulo{
                 gap: 36px;
@@ -460,55 +533,27 @@
                     width: 420px;
                 }
             }
-            form{
-                gap: 24px;
-                input{
-                    width: 294px;
-                    padding: 16px 20px;
-                }
-                button{
-                    padding: 19px 32px;
-                    svg{
-                        width: 28px;
-                    }
-                }
-            }
-        }
-        .formulario-footer{
-            margin-top: 192px;
-            .icone{
-                width: 78px;
-                margin-bottom: 42px;
-            }
-            .form-footer{
-                border-radius: 40px;
-                padding: 56px;
-                p{
-                    margin-bottom: 20px;
-                    label{
-                        font-size: 1.6rem;
-                        margin-bottom: 10px;
-                    }
-                    input, textarea{
-                        padding: 16px 20px;
-                    }
-                    textarea{
-                        height: 120px;
-                    }
-                }
-                .btn-enviar{
-                    margin: 0;
-                    button{
-                        font-size: 2.0rem;
-                        padding: 16px 32px;
-                        gap: 142px;
-                        svg{
-                            width: 28px;
+            .wpcf7{
+                width: 56%;
+                form{
+                    p{
+                        gap: 24px;
+                        
+                        input{
+                            width: 294px;
+                            padding: 16px 20px;
+                        }
+                        button{
+                            padding: 19px 32px;
+                            svg{
+                                width: 28px;
+                            }
                         }
                     }
                 }
             }
         }
+
         .footer-bottom{
             background-size: 1564px;
             height: 662px;
@@ -530,6 +575,41 @@
             .menu-footer__wrapper{
                 .menu{
                     gap: 32px;
+                }
+            }
+        }
+    }
+    .formulario-footer{
+        margin-top: 192px;
+        .icone{
+            width: 78px;
+            margin-bottom: 42px;
+        }
+        .form-footer{
+            border-radius: 40px;
+            padding: 56px;
+            p{
+                margin-bottom: 20px;
+                label{
+                    font-size: 1.6rem;
+                    margin-bottom: 10px;
+                }
+                input, textarea{
+                    padding: 16px 20px;
+                }
+                textarea{
+                    height: 120px;
+                }
+            }
+            .btn-enviar{
+                margin: 0;
+                button{
+                    font-size: 2.0rem;
+                    padding: 16px 32px;
+                    gap: 142px;
+                    svg{
+                        width: 28px;
+                    }
                 }
             }
         }

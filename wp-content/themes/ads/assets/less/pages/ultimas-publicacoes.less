@@ -1,0 +1,118 @@
+// main: "../main.less"
+
+
+.page-template-template-ultimas-publicacoes{
+    background-image: url('../img/single-page-bg.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-color: #F3F3F3;
+    .footer__ads{
+        margin-top: 164px;
+    }
+    .footer__ads::before{
+        background-color: #F3F3F3;
+    }
+
+    .posts-list{
+        padding-top: 92px;
+    }
+
+    .lista-posts{
+        padding-top: 24px;
+    }
+
+}
+
+.paginacao{
+    display: flex!important;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+    gap: 6px;
+    .page-numbers{
+        border: 1px solid @purple1;
+        color: @purple1;
+        font-size: 1.6rem;
+        border-radius: 8px;
+        width: 42px;
+        height: 42px;;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover{
+            color: @purple3;
+            border-color: @purple3;
+        }
+        &.current{
+            background-color: @purple1;
+            color: @white;
+            &:hover{
+                border-color: @purple1;
+            }
+        }
+        &.dots{
+            border: 1px solid transparent;
+            width: auto;
+            &:hover{
+                color: @purple1;
+            }
+        }
+        &.prev, &.next{
+            width: auto;
+            padding: 0;
+            border: 1px solid transparent;
+            svg{
+                fill: @purple1;
+                width: 21px;
+            }
+            &:hover{
+                svg{
+                   fill: @purple2;
+                }
+            }
+        }
+        &.prev{
+            rotate: 180deg;
+        }
+    }
+}
+
+
+@media (min-width: 960px) {
+    .page-template-template-ultimas-publicacoes{
+        background-size: 800px;
+
+    }
+
+    .paginacao{
+        margin-top: 64px;
+        gap: 12px;
+        .page-numbers{
+            font-size: 1.6rem;
+            padding: 10px 0;
+            width: 42px;
+
+            &.prev, &.next{
+                svg{
+                    width: 28px;
+                }
+            }
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .page-template-template-ultimas-publicacoes{
+        background-size: 1000px;
+        .posts-list{
+        }
+    }
+}
+
+@media (min-width: 1600px) {
+    .page-template-template-ultimas-publicacoes{
+        background-size: 1200px;
+
+    }
+
+}

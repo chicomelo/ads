@@ -1,0 +1,63 @@
+// main: "../main.less"
+
+.search{
+    background: #F3F3F3;
+    background-image: url('../img/single-page-bg.png');
+    background-repeat: no-repeat;
+    background-position: top right;
+
+    .footer__ads{
+        margin-top: 92px;
+    }
+    .footer__ads::before{
+        background-color: #F3F3F3;
+    }
+
+    .posts-list{
+        padding: 64px 0;
+
+        .titulo{
+            color: @black;
+            text-align: center;
+        }
+
+        .lista-posts{
+            margin-top: 78px;
+        }
+       
+    }
+
+}
+
+@media (min-width: 960px) {
+    .search{
+        .posts-list{
+            padding: 78px 0 48px 0;
+            .lista-posts{
+                margin-top: 92px;
+            }
+        }
+    }
+}
+@media (min-width: 1200px) {
+    .search{
+        .posts-list{
+            padding: 92px 0 56px 0;
+            .lista-posts{
+                margin-top: 92px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1600px) {
+    .search{
+        .posts-list{
+            padding: 112px 0 64px 0;
+            .lista-posts{
+                margin-top: 142px;
+            }
+
+        }
+    }
+}

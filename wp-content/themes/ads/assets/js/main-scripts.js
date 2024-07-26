@@ -31,9 +31,20 @@ jQuery(document).ready(function ($) {
     
 
     // redireciona apos enviar e-mail
-    document.addEventListener( 'wpcf7mailsent', function( event ) {
-        location = '/contato/enviado';
-    }, false );
+    // document.addEventListener( 'wpcf7mailsent', function( event ) {
+    //     location = '/contato/enviado';
+    // }, false );
+    var SPMaskBehavior = function (val) {
+        return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
+    },
+    spOptions = {
+        onKeyPress: function(val, e, field, options) {
+            field.mask(SPMaskBehavior.apply({}, arguments), options);
+        }
+    };
+      
+    $('.wpcf7-tel').mask(SPMaskBehavior, spOptions);
+    $('input[name="cnpj"]').mask('00.000.000/0000-00', {reverse: true});
 
 
     if($('body').hasClass('page-template-front-page')){
@@ -106,28 +117,28 @@ jQuery(document).ready(function ($) {
                 
                 centerMode: false,
                 lazyLoad: 'ondemand',
-                infinite: false,
-                slidesToShow: 6,
+                infinite: true,
+                slidesToShow: 7,
                 arrows: true,
                 dots: false,
                 centerMode: true,
-                centerPadding: '92px',
+                centerPadding: '124px',
                 prevArrow: arrowPrev,
                 nextArrow: arrowNext,
-                initialSlide: 4,
+                initialSlide: 6,
                 responsive: [
                     {
                         breakpoint: 1600,
                         settings: {
                             slidesToShow: 5,
-                            centerPadding: '64px'
+                            centerPadding: '78px'
                         }
                     },
                     {
                         breakpoint: 1200,
                         settings: {
                             slidesToShow: 4,
-                            centerPadding: '56px'
+                            centerPadding: '78px'
                         }
                     },
                     {
@@ -153,57 +164,23 @@ jQuery(document).ready(function ($) {
 
         if ($('.slider-driven-mobile .slider')) {
             $('.slider-driven-mobile .slider').slick({
-                
-                centerMode: false,
                 lazyLoad: 'ondemand',
                 infinite: false,
-                slidesToShow: 5,
+                slidesToShow: 2,
                 arrows: true,
                 dots: false,
                 centerMode: true,
                 centerPadding: '36px',
                 prevArrow: arrowPrev,
                 nextArrow: arrowNext,
-                initialSlide: 4,
-                responsive: [
-                    {
-                        breakpoint: 1600,
-                        settings: {
-                            slidesToShow: 4,
-                            centerPadding: '36px'
-                        }
-                    },
-                    {
-                        breakpoint: 1200,
-                        settings: {
-                            slidesToShow: 4,
-                            centerPadding: '36px'
-                        }
-                    },
-                    {
-                        breakpoint: 960,
-                        settings: {
-                            slidesToShow: 1,
-                            centerPadding: '36px'
-                        }
-                    },
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            centerMode: true,
-                            initialSlide: 1,
-                            slidesToShow: 2,
-                        }
-                    }
-                ]
+                initialSlide: 4
+ 
             });
         }
 
         if ($(window).width() < 960) {
             if ($('.slider-fluxo .slider')) {
-
                 $('.slider-fluxo .slider .separador').remove();
-
                 $('.slider-fluxo .slider').slick({
                     
                     centerMode: false,
@@ -233,100 +210,332 @@ jQuery(document).ready(function ($) {
     }
 
     if($('body').hasClass('page-template-template-sobre-nos')){
-        
+        if ($('.slider-nossos-clientes-1 .slider')) {
+            $('.slider-nossos-clientes-1 .slider').slick({
+                autoplay: true,
+                autoplaySpeed: 0,
+                speed: 70000,
+                arrows: false,
+                swipe: false,
+                slidesToShow: 1,
+                cssEase: 'linear'
+
+
+            });
+        }
+        if ($('.slider-nossos-clientes-2 .slider')) {
+            $('.slider-nossos-clientes-2 .slider').slick({
+                autoplay: true,
+                autoplaySpeed: 0,
+                speed: 80000,
+                arrows: false,
+                swipe: false,
+                slidesToShow: 1,
+                cssEase: 'linear',
+                rtl: true
+            });
+        }
+        if ($('.slider-nossos-clientes-3 .slider')) {
+            $('.slider-nossos-clientes-3 .slider').slick({
+                autoplay: true,
+                autoplaySpeed: 0,
+                speed: 60000,
+                arrows: false,
+                swipe: false,
+                slidesToShow: 1,
+                cssEase: 'linear'
+
+            });
+        }
+        if ($('.slider-nossos-clientes-4 .slider')) {
+            $('.slider-nossos-clientes-4 .slider').slick({
+                autoplay: true,
+                autoplaySpeed: 0,
+                speed: 100000,
+                arrows: false,
+                swipe: false,
+                slidesToShow: 1,
+                cssEase: 'linear',
+                rtl: true
+            });
+        }
+        if ($('.slider-nossos-clientes-5 .slider')) {
+            $('.slider-nossos-clientes-5 .slider').slick({
+                autoplay: true,
+                autoplaySpeed: 0,
+                speed: 80000,
+                arrows: false,
+                swipe: false,
+                slidesToShow: 1,
+                cssEase: 'linear'
+            });
+        }
     }
 
+    if($('body').hasClass('page-template-template-nossas-solucoes')){
+
+        if ($(window).width() < 960) {
+            if ($('.slider-como-funciona .slider')) {
+                $('.slider-como-funciona .slider').slick({
+                    centerMode: false,
+                    lazyLoad: 'ondemand',
+                    infinite: false,
+                    slidesToShow: 1,
+                    arrows: false,
+                    dots: true,
+                    responsive: [
+                        {
+                            breakpoint: 960,
+                            settings: {
+                                slidesToShow: 2,
+                            }
+                        },
+                        {
+                            breakpoint: 480,
+                            settings: {
+                                slidesToShow: 1,
+                            }
+                        }
+                    ]
+                });
+            }
+        }
+
+
+        if ($('.slider-beneficios .slider')) {
+            $('.slider-beneficios .slider').slick({
+                centerMode: true,
+                lazyLoad: 'ondemand',
+                infinite: false,
+                slidesToShow: 1,
+                arrows: true,
+                prevArrow: arrowPrev,
+                nextArrow: arrowNext,
+                dots: true,
+                centerPadding: '264px',
+                responsive: [
+                    {
+                        breakpoint: 1600,
+                        settings: {
+                            slidesToShow: 1,
+                            centerPadding: '192px'
+                        }
+                    },
+                    {
+                        breakpoint: 1200,
+                        settings: {
+                            slidesToShow: 1,
+                            centerPadding: '92px'
+                        }
+                    },
+                    {
+                        breakpoint: 960,
+                        settings: {
+                            centerMode: false,
+                            slidesToShow: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            centerMode: false,
+                            slidesToShow: 1,
+                            arrows: false
+                        }
+                    }
+                ]
+            });
+        }
+
+        if ($(window).width() < 960) {
+            if ($('.slider-formatos-disponiveis .slider')) {
+                $('.slider-formatos-disponiveis .slider').slick({
+                    centerMode: false,
+                    lazyLoad: 'ondemand',
+                    infinite: false,
+                    slidesToShow: 1,
+                    arrows: false,
+                    dots: true,
+                    responsive: [
+                        {
+                            breakpoint: 960,
+                            settings: {
+                                slidesToShow: 2,
+                            }
+                        },
+                        {
+                            breakpoint: 480,
+                            settings: {
+                                slidesToShow: 1,
+                            }
+                        }
+                    ]
+                });
+            }
+            if ($('.slider-beneficios-oem-ads .slider')) {
+                $('.slider-beneficios-oem-ads .slider').slick({
+                    centerMode: false,
+                    lazyLoad: 'ondemand',
+                    infinite: false,
+                    slidesToShow: 1,
+                    arrows: false,
+                    dots: true,
+                    responsive: [
+                        {
+                            breakpoint: 960,
+                            settings: {
+                                slidesToShow: 2,
+                            }
+                        },
+                        {
+                            breakpoint: 480,
+                            settings: {
+                                slidesToShow: 1,
+                            }
+                        }
+                    ]
+                });
+            }
+
+        }
+
+    }
+
+    if($('body').hasClass('page-template-template-publishers')){
+
+        if ($(window).width() < 960) {
+            if ($('.slider-porque-publisher .slider')) {
+                $('.slider-porque-publisher .slider').slick({
+                    centerMode: false,
+                    lazyLoad: 'ondemand',
+                    infinite: false,
+                    slidesToShow: 1,
+                    arrows: false,
+                    dots: true,
+                    responsive: [
+                        {
+                            breakpoint: 960,
+                            settings: {
+                                slidesToShow: 2,
+                            }
+                        },
+                        {
+                            breakpoint: 480,
+                            settings: {
+                                slidesToShow: 1,
+                            }
+                        }
+                    ]
+                });
+            }
+            if ($('.slider-tecnologias .slider')) {
+                $('.slider-tecnologias .slider').slick({
+                    centerMode: false,
+                    lazyLoad: 'ondemand',
+                    infinite: false,
+                    slidesToShow: 1,
+                    arrows: false,
+                    dots: true,
+                    responsive: [
+                        {
+                            breakpoint: 960,
+                            settings: {
+                                slidesToShow: 2,
+                            }
+                        },
+                        {
+                            breakpoint: 480,
+                            settings: {
+                                slidesToShow: 1,
+                            }
+                        }
+                    ]
+                });
+            }
+            if ($('.slider-formatos-disponiveis-publishers .slider')) {
+                $('.slider-formatos-disponiveis-publishers .slider').slick({
+                    centerMode: false,
+                    lazyLoad: 'ondemand',
+                    infinite: false,
+                    slidesToShow: 1,
+                    arrows: false,
+                    dots: true,
+                    responsive: [
+                        {
+                            breakpoint: 960,
+                            settings: {
+                                slidesToShow: 2,
+                            }
+                        },
+                        {
+                            breakpoint: 480,
+                            settings: {
+                                slidesToShow: 1,
+                            }
+                        }
+                    ]
+                });
+            }
+        }
+    }
+
+    if($('body').hasClass('blog')){
+        if ($(window).width() < 960) {
+            if ($('.slider-post-destaques')) {
+                $('.slider-post-destaques').slick({
+                    centerMode: false,
+                    lazyLoad: 'ondemand',
+                    infinite: false,
+                    slidesToShow: 1,
+                    arrows: false,
+                    dots: true
+                });
+            }
+            if ($('.most-read-list .row')) {
+                $('.most-read-list .row').slick({
+                    centerMode: false,
+                    lazyLoad: 'ondemand',
+                    infinite: false,
+                    slidesToShow: 1,
+                    arrows: false,
+                    dots: true
+                });
+            }
+            
+
+        }
+    }
+
+
+    $('#load-more').click(function(){
+        var button = $(this),
+        data = {
+            'action': 'loadmore',
+            'query': load_more_params.posts,
+            'page' : load_more_params.current_page
+        };
+
+
+        $.ajax({
+            url : load_more_params.ajaxurl,
+            data:data,
+            type:'POST',
+            beforeSend: function( xhr ){
+                button.text('carregando...'); // Mudança de texto no botão enquanto carrega
+            },
+            success:function(data){
+                if( data ) {
+                    $('#posts-container').append(data);
+                    load_more_params.current_page++;
+                    button.html('carregar mais <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 18" xml:space="preserve"><path d="M18 8h-8V0H8v8H0v2h8v8h2v-8h8z"/></svg>');
+                    if ( load_more_params.current_page == load_more_params.max_page )
+                        button.remove(); // Remove o botão se for a última página
+                } else {
+                    button.remove(); // Remove o botão se não houver mais posts
+                }
+            }
+        });
+    });
+
+
 });
-
-
-    // if ($('.lista-unidades')) {
-    //     $('.lista-unidades').slick({
-    //         centerMode: false,
-    //         lazyLoad: 'ondemand',
-    //         centerPadding: '0',
-    //         infinite: false,
-    //         slidesToShow: 5,
-    //         responsive: [
-    //             {
-    //                 breakpoint: 4000,
-    //                 settings: "unslick"
-    //             },
-    //             {
-    //                 breakpoint: 1024,
-    //                 settings: {
-    //                     arrows: false,
-    //                     dots: true,
-    //                     centerMode: false,
-    //                     centerPadding: '40px',
-    //                     slidesToShow: 3
-    //                 }
-    //             },
-    //             {
-    //                 breakpoint: 768,
-    //                 settings: {
-    //                     arrows: false,
-    //                     dots: true,
-    //                     centerMode: false,
-    //                     centerPadding: '40px',
-    //                     slidesToShow: 2
-    //                 }
-    //             },
-    //             {
-    //                 breakpoint: 480,
-    //                 settings: {
-    //                     arrows: false,
-    //                     dots: true,
-    //                     centerMode: false,
-    //                     centerPadding: '20px',
-    //                     slidesToShow: 1
-    //                 }
-    //             }
-    //         ]
-    //     });
-    // }
-
-    /* sobre */
-
-    // $('.slider-ano').slick({
-    //     slidesToShow: 5,
-    //     slidesToScroll: 1,
-    //     infinite: false,
-    //     dots: false,
-    //     arrows: false,
-    //     centerMode: true,
-    //     focusOnSelect: true,
-    //     adaptiveHeight: true,
-    //     centerPadding: '150px',
-    //     responsive: [
-    //         {
-    //             breakpoint: 1370,
-    //             settings: {
-    //                 centerPadding: '00px',
-    //                 slidesToShow: 5
-    //             }
-    //         },
-    //         {
-    //             breakpoint: 1024,
-    //             settings: {
-    //                 centerPadding: '100px',
-    //                 slidesToShow: 3
-    //             }
-    //         },
-    //         {
-    //             breakpoint: 768,
-    //             settings: {
-    //                 centerPadding: '60px',
-    //                 slidesToShow: 3
-    //             }
-    //         },
-    //         {
-    //             breakpoint: 480,
-    //             settings: {
-    //                 centerPadding: '0px',
-    //                 slidesToShow: 3
-    //             }
-    //         }
-    //     ]
-    // });
-
-    /* fim sobre */

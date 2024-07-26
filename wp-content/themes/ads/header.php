@@ -13,9 +13,22 @@
     var img_url = '<?php echo do_shortcode("[img-url]"); ?>';
 </script>
 
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5TH9H2SG');</script>
+<!-- End Google Tag Manager -->
+
 </head>
 
 <body <?php body_class(); ?>>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5TH9H2SG"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 <header class="header-principal">
 
@@ -85,9 +98,9 @@
         <div class="close">
             <span class="slice"></span>
         </div>
-        <form action="/" method="get">
+        <form role="search" method="get" action="<?php echo home_url('/'); ?>">
             <input type="text" name="s" id="search" placeholder="Digite aqui para pesquisar" value="<?php the_search_query(); ?>" />
-            <button>
+            <button type="submit">
                 <span>pressione enter</span>
                 <div class="search-icon">
                     <div class="icone"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 24.01" xml:space="preserve"><path d="m25 22.44-7.86-7.55c1.28-1.57 2.05-3.53 2.05-5.68C19.2 4.13 14.89 0 9.6 0S0 4.13 0 9.21s4.31 9.21 9.6 9.21c2.23 0 4.28-.74 5.91-1.97L23.37 24 25 22.44zM2.3 9.21c0-3.86 3.27-7 7.29-7s7.29 3.14 7.29 7-3.27 7-7.29 7-7.29-3.13-7.29-7z" fill="#fff"/></svg></div>

@@ -27,6 +27,17 @@ a{
     color: @white;
     font-weight: 500;
     font-size: 2.8rem;
+    line-height: 1.2;
+    span{
+        font-weight: 500;
+    }
+}
+
+.titulo-2{
+    color: @white;
+    font-weight: 500;
+    font-size: 2.8rem;
+    line-height: 1.2;
     span{
         font-weight: 500;
     }
@@ -62,6 +73,72 @@ a{
     }
 }
 
+.btn-outline{
+    border: 2px solid @white;
+    font-size: 1.6rem;
+    color: @white;
+    padding: 12px 24px;
+    border-radius: 40px;
+    transition: all 0.2s;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-left: auto;
+    margin-right: 0;
+    svg{
+        display: inline-block;
+        width: 28px;
+        fill: @white;
+        transition: all 0.2s;
+    }
+    &:hover{
+        border-color: @green1;
+        color: @green1;
+        svg{
+            fill: @green1;
+        }
+    }
+}
+
+.btn-outline-purple{
+    .btn-outline;
+    border-color: @purple1;
+    color: @purple1;
+    padding: 12px 12px;
+    svg{
+        display: none;
+        fill: @purple1;
+    }
+
+    &:hover{
+        border-color: @purple3;
+        color: @purple3;
+        svg{
+            fill: @purple3;
+        }   
+    }
+}
+
+.btn-purple{
+    .btn;
+    background: none;
+    color: @purple1;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0;
+    font-size: 1.6rem;
+    svg{
+        fill: @purple1;
+    }
+    &:hover{
+        background: none;
+        color: @purple3;
+        svg{
+            fill: @purple3;
+        }
+    }
+}
 
 .slick-dots{
     li {
@@ -114,7 +191,9 @@ a{
     .titulo{
         font-size: 3.6rem;
     }
-
+    .titulo-2{
+        font-size: 2.8rem;
+    }
     .paragrafo{
         font-size: 1.6rem;
         margin-top: 24px;
@@ -129,7 +208,27 @@ a{
             width: 28px;
         }
     }
-
+    .btn-purple{
+        .btn;
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0;
+        font-size: 1.6rem;
+    }
+    .btn-outline{
+        font-size: 1.6rem;
+        padding: 12px 24px;
+        gap: 32px;
+        svg{
+            width: 24px;
+        }
+    }
+    .btn-outline-purple{
+        .btn-outline;
+        svg{
+            display: block;
+        }
+    }
     .banner-interna{
         background-size: cover;
         background-position: center;
@@ -149,7 +248,9 @@ a{
     .titulo{
         font-size: 4.2rem;
     }
-
+    .titulo-2{
+        font-size: 3.2rem;
+    }
     .paragrafo{
         font-size: 1.8rem;
         margin-top: 32px;
@@ -163,23 +264,58 @@ a{
             width: 28px;
         }
     }
+    .btn-purple{
+        .btn;
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0;
+        font-size: 1.6rem;
+    }
+    .btn-outline{
+        font-size: 1.6rem;
+        padding: 12px 24px;
+        svg{
+            width: 28px;
+        }
+    }
+    .btn-outline-purple{
+        .btn-outline;
+    }
     .banner-interna{
         height: 696px;
         h2{
             font-size: 4.8rem;
         }
     }
+
 }
 
 @media (min-width: 1600px) {
     .titulo{
         font-size: 4.8rem;
     }
+    .titulo-2{
+        font-size: 4.0rem;
+    }
     .paragrafo{
         font-size: 2.0rem;
     }
     .btn{
         font-size: 2.0rem;
+    }
+    .btn-purple{
+        .btn;
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0;
+        font-size: 1.6rem;
+    }
+    .btn-outline{
+        padding: 16px 32px;
+    }
+    .btn-outline-purple{
+        .btn-outline;
+        font-size: 1.8rem;
     }
     .banner-interna{
         height: 696px;
