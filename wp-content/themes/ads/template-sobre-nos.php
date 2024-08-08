@@ -118,38 +118,7 @@ the_content();
                         </div>
                     </div>
                 </div>
-                <div class="slider-nossos-clientes-4" dir="rtl">
-                    <div class="slider">
-                        <div>
-                            <picture>
-                                <source media="(max-width: 799px)" srcset="<?php echo do_shortcode("[img-url]"); ?>nossos-clientes-img-4-mobile.png" />
-                                <img class="img-fluid" src="<?php echo do_shortcode("[img-url]"); ?>nossos-clientes-img-4.png" alt="Nossos clientes" />
-                            </picture>
-                        </div>
-                        <div>
-                            <picture>
-                                <source media="(max-width: 799px)" srcset="<?php echo do_shortcode("[img-url]"); ?>nossos-clientes-img-4-mobile.png" />
-                                <img class="img-fluid" src="<?php echo do_shortcode("[img-url]"); ?>nossos-clientes-img-4.png" alt="Nossos clientes" />
-                            </picture>
-                        </div>
-                    </div>
-                </div>
-                <div class="slider-nossos-clientes-5">
-                    <div class="slider">
-                        <div>
-                            <picture>
-                                <source media="(max-width: 799px)" srcset="<?php echo do_shortcode("[img-url]"); ?>nossos-clientes-img-5-mobile.png" />
-                                <img class="img-fluid" src="<?php echo do_shortcode("[img-url]"); ?>nossos-clientes-img-5.png" alt="Nossos clientes" />
-                            </picture>
-                        </div>
-                        <div>
-                            <picture>
-                                <source media="(max-width: 799px)" srcset="<?php echo do_shortcode("[img-url]"); ?>nossos-clientes-img-5-mobile.png" />
-                                <img class="img-fluid" src="<?php echo do_shortcode("[img-url]"); ?>nossos-clientes-img-5.png" alt="Nossos clientes" />
-                            </picture>
-                        </div>
-                    </div>
-                </div>
+
             </div>
             <a href="/nossas-solucoes/" class="btn" title="Ver nossas soluções">
                 ver nossas soluções

@@ -30,10 +30,7 @@ jQuery(document).ready(function ($) {
     }
     
 
-    // redireciona apos enviar e-mail
-    // document.addEventListener( 'wpcf7mailsent', function( event ) {
-    //     location = '/contato/enviado';
-    // }, false );
+
     var SPMaskBehavior = function (val) {
         return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
     },
@@ -45,6 +42,49 @@ jQuery(document).ready(function ($) {
       
     $('.wpcf7-tel').mask(SPMaskBehavior, spOptions);
     $('input[name="cnpj"]').mask('00.000.000/0000-00', {reverse: true});
+
+
+    /* gerencia form de contato */
+    var wpcf7Contato = document.querySelector( '.form-footer .wpcf7' );
+    wpcf7Contato.addEventListener( 'wpcf7mailsent', function( event ) {
+        $('.formulario-footer .form-footer').hide();
+        $('.formulario-footer .msg-sucesso').fadeIn();
+    }, false );
+    wpcf7Contato.addEventListener( 'wpcf7submit', function( event ) {
+        if($('.form-footer .wpcf7-form').hasClass('invalid')){
+             $('.form-footer .spinner-mask').hide();
+        }
+    }, false );
+
+    $('body').on('click', '.formulario-footer .msg-sucesso .btn', function(){
+        $('.formulario-footer .msg-sucesso').hide();
+        $('.formulario-footer .spinner-mask').hide();
+        $('.formulario-footer .form-footer').fadeIn();
+    })
+    $('body').on('click', '.form-footer .btn-enviar button', function(){
+        $('.form-footer .spinner-mask').fadeIn();
+    })
+    
+    /* gerencia form de newsletter */
+    var wpcf7News = document.querySelector( '.newsletter__wrapper .wpcf7' );
+    wpcf7News.addEventListener( 'wpcf7mailsent', function( event ) {
+        $('.newsletter__wrapper .spinner-mask').hide();
+        setTimeout(() => {
+            $('.newsletter__wrapper .wpcf7-response-output').fadeOut();
+        }, 4000);
+    }, false );
+    wpcf7News.addEventListener( 'wpcf7submit', function( event ) {
+        if($('.newsletter__wrapper .wpcf7-form').hasClass('invalid')){
+             $('.newsletter__wrapper .spinner-mask').hide();
+        }
+    }, false );
+    $('body').on('click', '.newsletter__wrapper .btn-enviar', function(){
+        $('.newsletter__wrapper .spinner-mask').fadeIn();
+    })
+
+
+
+
 
 
     if($('body').hasClass('page-template-front-page')){
@@ -114,7 +154,6 @@ jQuery(document).ready(function ($) {
 
         if ($('.slider-driven .slider')) {
             $('.slider-driven .slider').slick({
-                
                 centerMode: false,
                 lazyLoad: 'ondemand',
                 infinite: true,
@@ -164,8 +203,8 @@ jQuery(document).ready(function ($) {
 
         if ($('.slider-driven-mobile .slider')) {
             $('.slider-driven-mobile .slider').slick({
+                infinite: true,
                 lazyLoad: 'ondemand',
-                infinite: false,
                 slidesToShow: 2,
                 arrows: true,
                 dots: false,
@@ -214,7 +253,7 @@ jQuery(document).ready(function ($) {
             $('.slider-nossos-clientes-1 .slider').slick({
                 autoplay: true,
                 autoplaySpeed: 0,
-                speed: 70000,
+                speed: 60000,
                 arrows: false,
                 swipe: false,
                 slidesToShow: 1,
@@ -239,7 +278,7 @@ jQuery(document).ready(function ($) {
             $('.slider-nossos-clientes-3 .slider').slick({
                 autoplay: true,
                 autoplaySpeed: 0,
-                speed: 60000,
+                speed: 90000,
                 arrows: false,
                 swipe: false,
                 slidesToShow: 1,
@@ -247,29 +286,7 @@ jQuery(document).ready(function ($) {
 
             });
         }
-        if ($('.slider-nossos-clientes-4 .slider')) {
-            $('.slider-nossos-clientes-4 .slider').slick({
-                autoplay: true,
-                autoplaySpeed: 0,
-                speed: 100000,
-                arrows: false,
-                swipe: false,
-                slidesToShow: 1,
-                cssEase: 'linear',
-                rtl: true
-            });
-        }
-        if ($('.slider-nossos-clientes-5 .slider')) {
-            $('.slider-nossos-clientes-5 .slider').slick({
-                autoplay: true,
-                autoplaySpeed: 0,
-                speed: 80000,
-                arrows: false,
-                swipe: false,
-                slidesToShow: 1,
-                cssEase: 'linear'
-            });
-        }
+        
     }
 
     if($('body').hasClass('page-template-template-nossas-solucoes')){

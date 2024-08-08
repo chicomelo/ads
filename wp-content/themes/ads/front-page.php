@@ -1,15 +1,18 @@
 <?php
 /* Template Name: Home page */ 
     get_header();
-    the_content();
 ?>
-<!-- <picture>
-    <source media="(max-width: 799px)" srcset="<?php echo do_shortcode("[img-url]"); ?>img-food-service-mobile.jpg" />
-    <img class="img-fluid" src="<?php echo do_shortcode("[img-url]"); ?>img-food-service.jpg" alt="Somos especialistas em Food Service" />
-</picture> -->
+
 <div class="banner-principal">
-    <h2>Criamos <span class="purple">conexões</span> <span class="green">únicas</span> através da <br />sinergia entre dados, dispositivos e IA.</h2>
-    <span class="icone"><svg version="1.1" id="Camada_1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 26 58" xml:space="preserve"><style>.st0{fill:#fff}</style><path class="st0" d="M13.65 33.31c0-.36-.29-.66-.65-.66s-.66.3-.66.66.29.66.66.66c.36 0 .65-.3.65-.66zM13 41.58c.36 0 .65-.3.65-.67 0-.37-.29-.66-.65-.66s-.66.3-.66.66c0 .37.29.67.66.67zM13 37.78c.36 0 .65-.3.65-.67 0-.37-.29-.65-.65-.65s-.66.29-.66.65c0 .36.29.67.66.67zM13 45.38c.36 0 .65-.3.65-.66 0-.36-.29-.66-.65-.66s-.66.3-.66.66c0 .37.29.66.66.66zM17.52 51.87l-3.87 3.88v-7.22c0-.36-.29-.66-.65-.66-.37 0-.66.3-.66.66v7.23l-3.88-3.89c-.26-.26-.67-.26-.93 0s-.26.67 0 .93l4.99 5c.12.13.29.19.47.19s.34-.07.47-.19l4.99-5c.26-.26.26-.67 0-.93-.26-.25-.67-.25-.93 0z"/><path class="st0" d="M13 0C5.83 0 0 5.84 0 13.03v15.52c0 5.88 3.91 10.84 9.25 12.46v-1.38c-4.61-1.57-7.94-5.94-7.94-11.08V13.03c0-6.24 4.89-11.34 11.03-11.68v8.84c-1.55.31-2.73 1.68-2.73 3.33v4.98c0 1.65 1.18 3.02 2.73 3.33v3.5h1.31v-3.5c1.55-.31 2.73-1.68 2.73-3.33v-4.98c0-1.65-1.18-3.02-2.73-3.33V1.35c6.14.34 11.03 5.44 11.03 11.68v15.52c0 5.15-3.33 9.51-7.94 11.08v1.38C22.09 39.4 26 34.43 26 28.55V13.03C26 5.84 20.16 0 13 0zm2.07 13.52v4.98c0 1.15-.93 2.08-2.07 2.08s-2.07-.93-2.07-2.08v-4.98c0-1.15.93-2.08 2.07-2.08s2.07.93 2.07 2.08z"/></svg></span>
+    <div class="conteudo">
+        <h2>Criamos <span class="purple">conexões</span> <span class="green">únicas</span> através da <br />sinergia entre dados, dispositivos e IA.</h2>
+        <span class="icone"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" viewBox="0 0 26 58" xml:space="preserve"><path class="st0" d="M13.65 33.31c0-.36-.29-.66-.65-.66s-.66.3-.66.66.29.66.66.66c.36 0 .65-.3.65-.66zM13 41.58c.36 0 .65-.3.65-.67 0-.37-.29-.66-.65-.66s-.66.3-.66.66c0 .37.29.67.66.67zM13 37.78c.36 0 .65-.3.65-.67 0-.37-.29-.65-.65-.65s-.66.29-.66.65c0 .36.29.67.66.67zM13 45.38c.36 0 .65-.3.65-.66 0-.36-.29-.66-.65-.66s-.66.3-.66.66c0 .37.29.66.66.66zM17.52 51.87l-3.87 3.88v-7.22c0-.36-.29-.66-.65-.66-.37 0-.66.3-.66.66v7.23l-3.88-3.89c-.26-.26-.67-.26-.93 0s-.26.67 0 .93l4.99 5c.12.13.29.19.47.19s.34-.07.47-.19l4.99-5c.26-.26.26-.67 0-.93-.26-.25-.67-.25-.93 0z"/><path class="st0" d="M13 0C5.83 0 0 5.84 0 13.03v15.52c0 5.88 3.91 10.84 9.25 12.46v-1.38c-4.61-1.57-7.94-5.94-7.94-11.08V13.03c0-6.24 4.89-11.34 11.03-11.68v8.84c-1.55.31-2.73 1.68-2.73 3.33v4.98c0 1.65 1.18 3.02 2.73 3.33v3.5h1.31v-3.5c1.55-.31 2.73-1.68 2.73-3.33v-4.98c0-1.65-1.18-3.02-2.73-3.33V1.35c6.14.34 11.03 5.44 11.03 11.68v15.52c0 5.15-3.33 9.51-7.94 11.08v1.38C22.09 39.4 26 34.43 26 28.55V13.03C26 5.84 20.16 0 13 0zm2.07 13.52v4.98c0 1.15-.93 2.08-2.07 2.08s-2.07-.93-2.07-2.08v-4.98c0-1.15.93-2.08 2.07-2.08s2.07.93 2.07 2.08z"/></svg></span>
+    </div>
+     <video loop="true" autoplay="autoplay" controls="false" preload= "auto" width="640" height="480" muted playsinline>
+        <source src="<?php echo get_template_directory_uri().'/assets/video/'; ?>video-home.mp4" type="video/mp4" />
+        <source src="<?php echo get_template_directory_uri().'/assets/video/'; ?>video-home.webm" type="video/webm" />
+        <source src="<?php echo get_template_directory_uri().'/assets/video/'; ?>video-home.ogv" type="video/ogg" />
+    </video>
 </div>
 
 <section class="apresentacao">
@@ -148,10 +151,10 @@
                             <img src="<?php echo do_shortcode("[img-url]"); ?>logo-positivo.png" alt="Positivo" />
                         </div>
                         <div class="item">
-                            <img src="<?php echo do_shortcode("[img-url]"); ?>logo-compaq.png" alt="Compaq" />
+                            <img src="<?php echo do_shortcode("[img-url]"); ?>logo-positivo-seg.png" alt="Positivo Seg" />
                         </div>
                         <div class="item">
-                            <img src="<?php echo do_shortcode("[img-url]"); ?>logo-anker.png" alt="Anker" />
+                            <img src="<?php echo do_shortcode("[img-url]"); ?>logo-positivo-servers.png" alt="Positivo Servers & Solutions" />
                         </div>
                     </div>
                     <div class="produtos">
@@ -159,7 +162,7 @@
                             <img src="<?php echo do_shortcode("[img-url]"); ?>logo-positivo-casa-inteligente.png" alt="Positivo Casa Inteligente" />
                         </div>
                         <div class="item">
-                            <img src="<?php echo do_shortcode("[img-url]"); ?>logo-2am.png" alt="2AM Gaming" />
+                            <img src="<?php echo do_shortcode("[img-url]"); ?>logo-positivo-solucoes.png" alt="Positivo Soluçoes em Pagamentos" />
                         </div>
                         <div class="item">
                             <img src="<?php echo do_shortcode("[img-url]"); ?>logo-infinix.png" alt="Infinix" />
@@ -181,10 +184,10 @@
                     </div>
                     <div class="produtos">
                         <div class="item">
-                            <img src="<?php echo do_shortcode("[img-url]"); ?>logo-compaq.png" alt="Compaq" />
+                            <img src="<?php echo do_shortcode("[img-url]"); ?>logo-positivo-seg.png" alt="Positivo Seg" />
                         </div>
                         <div class="item">
-                            <img src="<?php echo do_shortcode("[img-url]"); ?>logo-anker.png" alt="Anker" />
+                            <img src="<?php echo do_shortcode("[img-url]"); ?>logo-positivo-servers.png" alt="Positivo Servers & Solutions" />
                         </div>
                     </div>
                     <div class="produtos">
@@ -192,7 +195,7 @@
                             <img src="<?php echo do_shortcode("[img-url]"); ?>logo-positivo-casa-inteligente.png" alt="Positivo Casa Inteligente" />
                         </div>
                         <div class="item">
-                            <img src="<?php echo do_shortcode("[img-url]"); ?>logo-2am.png" alt="2AM Gaming" />
+                            <img src="<?php echo do_shortcode("[img-url]"); ?>logo-positivo-solucoes.png" alt="Positivo Soluçoes em Pagamentos" />
                         </div>
                     </div>
                     <div class="produtos">

@@ -12,12 +12,8 @@
                 <p class="paragrafo">Assine nossa newsletter e fique por dentro de todas as novidades</p>
             </div>
             <?php echo do_shortcode('[contact-form-7 id="5231e3e" title="Formulário Newsletter"]'); ?>
-            <!-- <form>
-                <input type="text" placeholder="Seu nome" />
-                <input type="text" placeholder="Seu e-mail" />
-                <button class="btn-enviar"><span>Cadastrar</span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 14.73" xml:space="preserve"><path d="M28.71 6.66 22.35.3c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41l4.66 4.66H0v2h25.59l-4.66 4.66c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l6.36-6.36c.4-.4.4-1.03.01-1.42z" fill="#fff"/></svg></button>
-            </form> -->
             <p class="privacidade">Ao clicar em "enviar" a Positivo Tecnologia tratará os seus dados de acordo com a <a href="https://privacidade.positivotecnologia.com.br/" title="Política de Privacidade e Cookies" target="_blank">Política de Privacidade e Cookies</a>.</p>
+            <div class='spinner-mask'><div class='spinner'></div></div>
         </div>
 
         <div class="formulario-footer" id="formulario-footer">
@@ -33,7 +29,14 @@
                 </div>
                 <div class="col-12 col-md-6 offset-md-1">
                     <div class="form-footer">
-                        <?php echo do_shortcode('[contact-form-7 id="174c733" title="Formulário Footer"]'); ?>
+                        <?php echo do_shortcode('[contact-form-7 id="174c733" title="Formulário Contato"]'); ?>
+                        <div class='spinner-mask'><div class='spinner'></div></div>
+                    </div>
+                    <div class="msg-sucesso">
+                        <div class="icone"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93 93" xml:space="preserve"><circle cx="46.5" cy="46.5" r="46.5" fill="#e6e6e6"/><path d="M60.95 34.69 42.46 53.25l-9.41-9.45c-.92-.92-2.44-.92-3.36 0-.92.92-.92 2.44 0 3.37l11.06 11.1c.46.47 1.05.73 1.71.73s1.25-.26 1.71-.73l20.14-20.21c.92-.92.92-2.44 0-3.37-.92-.92-2.37-.92-3.36 0z" fill="#19cad8"/></svg></div>
+                        <p class="titulo">Formulário enviado <br />com sucesso</p>
+                        <p class="paragrafo">Agradecemos a sua mensagem.</p>
+                        <p><a href="javascript: void(0);"  class="btn" title="Nova mensagem">nova mensagem</a></p>
                     </div>
                 </div>
             </div>

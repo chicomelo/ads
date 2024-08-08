@@ -182,59 +182,13 @@ the_content();
                     <div class="col-12 col-md-6 offset-md-1">
                         <div class="form-footer">
                             <?php echo do_shortcode('[contact-form-7 id="52e7924" title="Formulário Publishers"]'); ?>
-                            <!-- <div class="wpcf7 js" id="wpcf7-f21-o1" lang="pt-BR" dir="ltr">
-                                <form action="/canal-de-denuncias/#wpcf7-f21-o1" method="post" class="wpcf7-form init" aria-label="Formulários de contato" novalidate="novalidate" data-status="init">
-                                    <p>
-                                        <label>Nome completo</label>
-                                        <span class="wpcf7-form-control-wrap" data-name="nome"><input size="40" maxlength="80" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Informe seu nome completo" value="" type="text" name="nome"></span>
-                                    </p>
-                                    <div class="row">
-                                        <div class="col-6 pe-3">
-                                            <p>
-                                                <label>Telefone</label>
-                                                <span class="wpcf7-form-control-wrap" data-name="telefone"><input size="40" maxlength="80" class="wpcf7-form-control wpcf7-email wpcf7-text wpcf7-validates-as-email" aria-invalid="false" placeholder="Ex: (41) 999969902" value="" type="tel" name="telefone"></span>
-                                            </p>
-                                        </div>
-                                        <div class="col-6 ps-3">
-                                            <p>
-                                                <label>E-mail</label>
-                                                <span class="wpcf7-form-control-wrap" data-name="email"><input size="40" maxlength="80" class="wpcf7-form-control wpcf7-email wpcf7-text wpcf7-validates-as-email" aria-invalid="false" placeholder="Ex: joao@gmail.com" value="" type="email" name="email"></span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <p>
-                                        <label>Cargo</label>
-                                        <span class="wpcf7-form-control-wrap" data-name="email"><input size="40" maxlength="80" class="wpcf7-form-control wpcf7-email wpcf7-text wpcf7-validates-as-email" aria-invalid="false" placeholder="Informe sua empresa" value="" type="text" name="cargo"></span>
-                                    </p>
-                                    <p>
-                                        <label>Empresa</label>
-                                        <span class="wpcf7-form-control-wrap" data-name="email"><input size="40" maxlength="80" class="wpcf7-form-control wpcf7-email wpcf7-text wpcf7-validates-as-email" aria-invalid="false" placeholder="Informe sua empresa" value="" type="text" name="empresa"></span>
-                                    </p>
-                                    <p>
-                                        <label>Website</label>
-                                        <span class="wpcf7-form-control-wrap" data-name="email"><input size="40" maxlength="80" class="wpcf7-form-control wpcf7-email wpcf7-text wpcf7-validates-as-email" aria-invalid="false" placeholder="Informe sua empresa" value="" type="text" name="cargo"></span>
-                                    </p>
-                                    <p>
-                                        <label>CNPJ</label>
-                                        <span class="wpcf7-form-control-wrap" data-name="email"><input size="40" maxlength="80" class="wpcf7-form-control wpcf7-email wpcf7-text wpcf7-validates-as-email" aria-invalid="false" placeholder="Informe sua empresa" value="" type="text" name="cargo"></span>
-                                    </p>
-                                    <p>
-                                        <label>Quantas visualizações mensais seu site possui?*</label>
-                                        <span class="wpcf7-form-control-wrap" data-name="email"><input size="40" maxlength="80" class="wpcf7-form-control wpcf7-email wpcf7-text wpcf7-validates-as-email" aria-invalid="false" placeholder="Informe sua empresa" value="" type="text" name="cargo"></span>
-                                    </p>
-                                    <p>
-                                        <label>Mensagem</label>
-                                        <span class="wpcf7-form-control-wrap" data-name="mensagem"><textarea cols="40" rows="10" maxlength="400" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Escreva sua mensagem" name="mensagem"></textarea></span> 
-                                    </p>
-                                    <p class="privacidade">Ao clicar em "enviar" a Positivo Tecnologia tratará os seus dados de acordo com a <a href="https://privacidade.positivotecnologia.com.br/" title="Política de Privacidade e Cookies" target="_blank">Política de Privacidade e Cookies</a>.</p>
-                                    <p class="btn-enviar">
-                                        <button type="submit">
-                                            <span>enviar</span>
-                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 29 14.73" xml:space="preserve"><path d="M28.71 6.66 22.35.3c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41l4.66 4.66H0v2h25.59l-4.66 4.66c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l6.36-6.36c.4-.4.4-1.03.01-1.42z" fill="#fff"/></svg>
-                                        </button>
-                                    </p>
-                                </form>
-                            </div> -->
+                            <div class='spinner-mask'><div class='spinner'></div></div>
+                        </div>
+                        <div class="msg-sucesso">
+                            <div class="icone"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93 93" xml:space="preserve"><circle cx="46.5" cy="46.5" r="46.5" fill="#e6e6e6"/><path d="M60.95 34.69 42.46 53.25l-9.41-9.45c-.92-.92-2.44-.92-3.36 0-.92.92-.92 2.44 0 3.37l11.06 11.1c.46.47 1.05.73 1.71.73s1.25-.26 1.71-.73l20.14-20.21c.92-.92.92-2.44 0-3.37-.92-.92-2.37-.92-3.36 0z" fill="#19cad8"/></svg></div>
+                            <p class="titulo">Formulário enviado <br />com sucesso</p>
+                            <p class="paragrafo">Agradecemos a sua mensagem.</p>
+                            <p><a href="javascript: void(0);"  class="btn" title="Nova mensagem">nova mensagem</a></p>
                         </div>
                     </div>
                 </div>
