@@ -5701,7 +5701,7 @@ a {
 .close {
   position: absolute;
   right: 32px;
-  top: 35px;
+  top: 24px;
   width: 42px;
   height: 42px;
   cursor: pointer;
@@ -5752,7 +5752,7 @@ a {
 .search__wrapper .container .close {
   position: absolute;
   right: 32px;
-  top: 35px;
+  top: 24px;
   width: 42px;
   height: 42px;
 }
@@ -5822,7 +5822,7 @@ a {
   transition: all 0.2s;
   padding-top: 24px;
   padding-bottom: 24px;
-  z-index: 2;
+  z-index: 9;
   background-color: rgba(30, 30, 30, 0.9);
   backdrop-filter: blur(6px);
 }
